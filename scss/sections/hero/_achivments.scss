@@ -1,0 +1,55 @@
+.achivments-block {
+    @include flex;
+}
+
+$achivIconWidth: 28px;
+
+.achivments {
+    @include flex(center, center, column);
+    color: white;
+    padding: 20px;
+    width: 255px;
+    height: 160px;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    position: relative;
+    margin-right: 60px;
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        background: white;
+        width: calc((100% - 50px) / 2);
+        top: 0;
+    }
+    &::before {
+        left: 0;
+    }
+    &::after {
+        right: 0;
+    }
+
+    &__icon {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, -50%);
+        width: $achivIconWidth;
+    }
+
+    &__value {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    &__descr {
+        font-size: .75rem;
+    }
+}
