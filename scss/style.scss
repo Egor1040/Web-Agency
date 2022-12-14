@@ -1,3 +1,4 @@
-body {
-    background: red;
-}
+@import "./mixins";
+@import "./common";
+@import "./sections/hero/hero";
+@import "./sections/hero/achivments";
