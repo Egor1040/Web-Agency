@@ -1,6 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap");
 :root {
   font-size: 24px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "PT Sans Caption", sans-serif;
   letter-spacing: 2px;
 }
 
@@ -22,6 +23,9 @@ li {
 .container {
   max-width: 1245px;
   margin: 0 auto;
+}
+.container__menu {
+  margin-left: auto;
 }
 
 .title {
@@ -116,7 +120,7 @@ li {
           flex-direction: column;
   color: white;
   padding: 20px;
-  width: 255px;
+  width: 262px;
   height: 160px;
   border-right: 2px solid white;
   border-bottom: 2px solid white;
@@ -156,4 +160,40 @@ li {
 }
 .achivments__descr {
   font-size: 0.75rem;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.menu-block {
+  width: 745px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100px;
+}
+.menu__item:first-child {
+  color: #f6ae48;
 }/*# sourceMappingURL=style.css.map */
