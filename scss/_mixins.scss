@@ -4,3 +4,22 @@
     align-items: $ai;
     flex-direction: $fd;
 }
+//for-laptop
+@mixin for-laptop {
+    @media(max-width: $bp-laptop) { @content; }
+}
+
+//for-tablet
+@mixin for-tablet {
+@media (max-width: $bp-tablet) { @content; }
+}
+
+//for-tablet2
+@mixin for-tablet2 {
+    @media (max-width: $bp-tablet2) { @content; }
+}
+
+//for phone 
+@mixin for-phone {
+@media (max-width: $bp-phone) { @content; }    
+}

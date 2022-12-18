@@ -1,0 +1,12 @@
+.studios {
+    background: white;
+}
+.specializations {
+    height: 525px;
+    position: relative;
+    &__img {
+        position: absolute;
+        top: 0;
+        
+    }
+}

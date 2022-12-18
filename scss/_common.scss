@@ -24,7 +24,8 @@ li {
     max-width: 1245px;
     margin: 0 auto;
     &__menu {
-        margin-left: auto;
+        max-width: 1245px;
+        margin: 0 auto;
     }
 }
 
@@ -35,3 +36,5 @@ li {
         line-height: 72px;
     }
 }
+
+@import "./media";

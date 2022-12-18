@@ -1,0 +1,43 @@
+.menu {
+    &-block {
+        @include flex($jc:flex-end, $ai:center, $fd:row);
+        height: 100px;
+        @include for-laptop {
+            font-size: 20px;
+        }
+        @include for-tablet {
+            font-size: 16px;
+        }
+        @media (max-width: 650px) {
+            @include flex($jc:flex-start, $ai:center, $fd:row)
+        }
+    }
+    &__item {
+        margin-right: 40px;
+        &:first-child {
+            color: #f6ae48;
+            @media (max-width: 650px) {
+                margin-right: 20px;
+                margin-left: 20px;
+            }
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        &_passive {
+            @media (max-width: $bp-menuOn) {
+                display: none;
+            }
+        }
+        &-button {
+            @media (min-width: 650px) {
+                display: none;
+            }
+            & img {
+                @media (max-width: 650px) {
+                    width: 21px;
+                }
+            }
+        }
+    }
+}
