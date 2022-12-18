@@ -331,6 +331,7 @@ li {
 
 .studios {
   background: white;
+  display: none;
 }
 
 .specializations {
