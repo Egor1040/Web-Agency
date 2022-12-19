@@ -16,6 +16,10 @@
         margin-right: 40px;
         &:first-child {
             color: #f6ae48;
+            &:hover {
+                color: #303263;
+                cursor: pointer;
+            }
             @media (max-width: 650px) {
                 margin-right: 20px;
                 margin-left: 20px;
@@ -25,11 +29,40 @@
             margin-right: 0;
         }
         &_passive {
+            &:hover {
+                cursor: pointer;
+                color: #303263;
+            }
             @media (max-width: $bp-menuOn) {
                 display: none;
             }
         }
         &-button {
+            width: 50px;
+            height: 50px;
+            position: relative;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            & span,
+            &::before,
+            &::after {
+                content: "";
+                width: 60%;
+                height: 3px;
+                background: #000000;
+                position: absolute;
+                transition: transform .3s;
+            }
+
+            &::before {
+                transform: translateY(-8px);
+            }
+
+            &::after {
+                transform: translateY(8px);
+            }
             @media (min-width: 650px) {
                 display: none;
             }
@@ -38,6 +71,31 @@
                     width: 21px;
                 }
             }
+            &:hover {
+                cursor: pointer;
+                background: #30326396;
+            }
+            &:hover .button-click {
+                transform: scale(100%);
+            }
         }
+    }
+}
+
+.button-click {
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    width: 173px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    box-shadow: 2px 3px 3px 3px #0000008a;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: scale(0);
+    &__item:hover {
+        color: #303263
     }
 }
