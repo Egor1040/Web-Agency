@@ -1,13 +1,119 @@
 .studios {
     background: white;
-    display: none;
 }
 .specializations {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: 525px;
     position: relative;
-    &__img {
+    @media (max-width: 1000px) {
+        @include flex($jc: center, $ai: center, $fd: column)
+    }
+    &__title {
+        font-size: 48px;
+        font-weight: bold;
+        @media (max-width: $st-tablet) {
+            font-size: 24px;
+        }
+    }
+    &__text {
+        max-width: 765px;
+        font-size: 20px;
+        @media (max-width: 1000px) {
+            text-align: center;
+        }
+        @media (max-width: $st-tablet) {
+            font-size: 16px;
+        }
+    }
+    &__bg-text {
+        font-size: 16rem;
+        letter-spacing: 17px;
+        font-family: tahoma;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: rgba(193,193,193,0.2);
         position: absolute;
-        top: 0;
-        
+        top: 50%;
+        left: 57%;
+        transform: translate(-50%, -50%);
+        @media (max-width: 950px) {
+            font-size: 10rem;
+        }
+        @media (max-width: $bp-tablet2) {
+            font-size: 6rem;
+        }
+    }
+}
+
+.special {
+    background: white;
+    display: flex;
+    height: 585px;
+    @media (max-width: $st-laptop) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__service {
+        padding: 20px;
+        width: 400px;
+        &:first-child {
+            padding-left: 0;
+            @media (max-width: $st-laptop) {
+                padding: 20px;
+            }
+        }
+        &__img {
+            height: 45px;
+            margin-bottom: 10px;
+        }
+        &__title {
+            font-size: 20px;
+            margin-bottom: 10px;
+            line-height: 1;
+        }
+        &__text {
+            font-size: 15px;
+            letter-spacing: 0.3px;
+            line-height: 1.6;
+        }
+        &_community {
+            color: white;
+            background: #f6ae48;
+            width: 400px;
+            height: 345px;
+            @media (max-width: 370px) {
+                height: auto;
+            }
+        }
+        &__bottom {
+            margin-top: 20px;
+            @include flex;
+            width: 132px;
+            height: 37px;
+            border: 2px solid white;
+            & p {
+                font-size: 18px;
+                letter-spacing: 0;
+            }
+        }
+    }
+    
+}
+
+.button-block {
+    @include flex($jc: space-between,$ai: center,$fd: row);
+    margin-top: 20px;
+    &__price {
+        @include flex;
+        width: 132px;
+        height: 37px;
+        border: 2px solid white;
+        & p {
+            font-size: 18px;
+            letter-spacing: 0;
+            }
     }
 }

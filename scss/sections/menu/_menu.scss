@@ -8,11 +8,12 @@
         @include for-tablet {
             font-size: 16px;
         }
-        @media (max-width: 650px) {
+        @media (max-width: 930px) {
             @include flex($jc:flex-start, $ai:center, $fd:row)
         }
     }
     &__item {
+        font-size: 30px;
         margin-right: 40px;
         &:first-child {
             color: #f6ae48;
@@ -20,9 +21,15 @@
                 color: #303263;
                 cursor: pointer;
             }
-            @media (max-width: 650px) {
+            @media (max-width: 930px) {
                 margin-right: 20px;
                 margin-left: 20px;
+            }
+            @media (max-width: 400px) {
+                margin-right: 5px;
+                margin-left: 5px;
+                font-size: 18px;
+                font-weight: bold;
             }
         }
         &:last-child {
@@ -63,7 +70,7 @@
             &::after {
                 transform: translateY(8px);
             }
-            @media (min-width: 650px) {
+            @media (min-width: 930px) {
                 display: none;
             }
             & img {
