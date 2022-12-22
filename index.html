@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Web-Agency</title>
 </head>
@@ -32,15 +33,15 @@
         <div class="container">
             <div class="hero-block">
                 <div class="hero-content">
-                    <h1 class="hero-content__title title title_h1">
+                    <h1 class="wow animate__animated animate__fadeInTopLeft hero-content__title title title_h1">
                         НАШИ САЙТЫ ЗАСТАВЛЯЮТ РАБОТАТЬ ВАШ БИЗНЕС.
                     </h1>
-                    <p class="hero-content__descr">
+                    <p class="wow animate__animated animate__fadeInTopRight  hero-content__descr">
                         Большинство веб-студий считают окончанием работы загрузку 
                         сайта в интернет. Но почти никто не умеет делать проекты,
                         которые работают и приносят прибыль.
                     </p>
-                    <div class="achivments-block">
+                    <div class="wow animate__animated animate__zoomIn achivments-block">
                         <div class="achivments">
                             <img class="achivments__icon" src="./img/icon/achive1icon.png" alt="">
                             <p class="achivments__value">518</p>
@@ -63,7 +64,7 @@
     </div>
     <div class="studios">
         <div class="container">
-            <div class="specializations">
+            <div class="wow animate__animated animate__zoomIn specializations">
                 <h2 class="specializations__title">Студия</h2>
                 <p class="specializations__text">
                     Основная специализация — проектирование сайтов и landing page. 
@@ -77,7 +78,7 @@
         </div>
         <div class="container">
             <div class="special">
-                <div class="special__service">
+                <div class="wow animate__animated animate__fadeInTopLeft special__service">
                     <img class="special__service__img" src="./img/icon/rocketicon.png">
                     <h4 class="special__service__title">Старт</h4>
                     <p class="special__service__text">
@@ -90,7 +91,7 @@
                         требований клиента.
                     </p>
                 </div>
-                <div class="special__service">
+                <div class="wow animate__animated animate__fadeInTopLeft special__service">
                     <img class="special__service__img" src="./img/icon/mobileicon.png">
                     <h4 class="special__service__title">Продвижение</h4>
                     <p class="special__service__text">
@@ -102,7 +103,7 @@
                         увеличить его целевую посещаемость.
                     </p>
                 </div>
-                <div class="special__service special__service_community">
+                <div class="wow animate__animated animate__fadeInTopLeft special__service special__service_community">
                     <img class="special__service__img" src="./img/icon/lifelineicon.png">
                     <h4 class="special__service__title">Поддержка</h4>
                     <p class="special__service__text">
@@ -125,5 +126,10 @@
             </div>
         </div>
     </div>
+
+    <script src="./js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>
