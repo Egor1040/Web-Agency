@@ -524,6 +524,7 @@ li {
   }
 }
 .special__service {
+  overflow: hidden;
   padding: 20px;
   width: 400px;
 }

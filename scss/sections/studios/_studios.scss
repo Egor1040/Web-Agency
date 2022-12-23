@@ -57,6 +57,7 @@
         justify-content: center;
     }
     &__service {
+        overflow: hidden;
         padding: 20px;
         width: 400px;
         &:first-child {
