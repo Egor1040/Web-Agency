@@ -25,6 +25,7 @@ li {
 }
 
 .container {
+  overflow: hidden;
   max-width: 1245px;
   margin: 0 auto;
 }
@@ -698,10 +699,81 @@ li {
   }
 }
 
-.developing-block {
+.developing {
   background: #ffffff;
 }
 
-.developing {
+.developing-block {
+  position: relative;
   height: 1300px;
+}
+
+.frame {
+  overflow: hidden;
+  position: absolute;
+  top: -46px;
+  left: -130px;
+  width: 666px;
+  height: 527px;
+  background: #f6ae48;
+}
+.frame__name {
+  font-size: 50px;
+  padding-top: 85px;
+}
+.frame__img_first {
+  position: absolute;
+  top: 10px;
+  left: -100px;
+}
+.frame__img_second {
+  position: absolute;
+  top: -35px;
+  right: -70px;
+}
+
+.choise {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  padding-top: 210px;
+  padding-left: 59px;
+}
+.choise-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-right: 20px;
+  width: 363px;
+  height: 315px;
+}
+.choise-item:nth-child(1) {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#0e0f12), color-stop(#00425a), color-stop(#007e84), color-stop(#00ba70), to(#a8eb12)), url(/img/choise1.png);
+  background-image: linear-gradient(to right top, #0e0f12, #00425a, #007e84, #00ba70, #a8eb12), url(/img/choise1.png);
+}
+.choise-item:nth-child(2) {
+  background-image: url(/img/choise2.png);
+}
+.choise-item:nth-child(3) {
+  background-image: url(/img/choise3.png);
+  margin-right: 0;
+}
+.choise-item__lending {
+  max-width: 262px;
+  color: #ffffff;
+  font-size: 50px;
+  line-height: 48.2px;
+  border-bottom: 2px solid #ffffff;
 }/*# sourceMappingURL=style.css.map */
