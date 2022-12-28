@@ -25,9 +25,12 @@ li {
 }
 
 .container {
-  overflow: hidden;
   max-width: 1245px;
   margin: 0 auto;
+}
+.container-choise {
+  width: 280px;
+  height: 210px;
 }
 
 .title {
@@ -712,7 +715,7 @@ li {
   overflow: hidden;
   position: absolute;
   top: -46px;
-  left: -130px;
+  left: -170px;
   width: 666px;
   height: 527px;
   background: #f6ae48;
@@ -737,11 +740,84 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
   padding-top: 210px;
-  padding-left: 59px;
+  padding-left: 60px;
 }
 .choise-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 20px;
+  width: 363px;
+  height: 315px;
+}
+.choise-item:nth-child(1) {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(14, 15, 18, 0.5764705882))), url(/img/choise1.png);
+  background-image: linear-gradient(to right top, rgba(14, 15, 18, 0.5764705882)), url(/img/choise1.png);
+}
+.choise-item:nth-child(2) {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(14, 15, 18, 0.5764705882))), url(/img/choise2.png);
+  background-image: linear-gradient(to right top, rgba(14, 15, 18, 0.5764705882)), url(/img/choise2.png);
+}
+.choise-item:nth-child(3) {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(14, 15, 18, 0.5764705882))), url(/img/choise3.png);
+  background-image: linear-gradient(to right top, rgba(14, 15, 18, 0.5764705882)), url(/img/choise3.png);
+  margin-right: 0;
+}
+.choise-item__lending {
+  height: 105px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 262px;
+  color: #ffffff;
+  font-size: 50px;
+  line-height: 48.2px;
+}
+.choise-item__lending span {
+  border-bottom: 2px solid #ffffff;
+}
+
+.button-choise {
+  padding-top: 45px;
+  width: 280px;
+  font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.button-choise__price_blue {
+  width: 200px;
+  height: 56px;
+  border: 2px solid #00b9e7;
+  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -755,25 +831,102 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-right: 20px;
-  width: 363px;
-  height: 315px;
 }
-.choise-item:nth-child(1) {
-  background-image: -webkit-gradient(linear, left bottom, right top, from(#0e0f12), color-stop(#00425a), color-stop(#007e84), color-stop(#00ba70), to(#a8eb12)), url(/img/choise1.png);
-  background-image: linear-gradient(to right top, #0e0f12, #00425a, #007e84, #00ba70, #a8eb12), url(/img/choise1.png);
-}
-.choise-item:nth-child(2) {
-  background-image: url(/img/choise2.png);
-}
-.choise-item:nth-child(3) {
-  background-image: url(/img/choise3.png);
-  margin-right: 0;
-}
-.choise-item__lending {
-  max-width: 262px;
+.button-choise__price_yellow {
+  width: 200px;
+  height: 56px;
+  border: 2px solid #ffcb00;
   color: #ffffff;
-  font-size: 50px;
-  line-height: 48.2px;
-  border-bottom: 2px solid #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.button-choise__price_green {
+  width: 200px;
+  height: 56px;
+  border: 2px solid #66bf0d;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.seo-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 955px;
+  height: 465px;
+  margin-left: 70px;
+  margin-top: 176px;
+}
+
+.seo-text {
+  position: relative;
+  max-width: 568px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.seo-text__title {
+  font-size: 36px;
+  z-index: 2;
+}
+.seo-text__back-title {
+  position: absolute;
+  top: 0;
+  left: -70px;
+  font-size: 80px;
+  font-weight: bold;
+  color: #cfcfcf;
+}
+.seo-text__text {
+  font-size: 24px;
+  line-height: 48px;
+}
+
+.seo-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }/*# sourceMappingURL=style.css.map */
