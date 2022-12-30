@@ -1,7 +1,8 @@
 .menu {
     &-block {
         @include flex($jc:flex-end, $ai:center, $fd:row);
-        height: 100px;
+        max-height: 100px;
+        padding: 30px 0;
         @include for-laptop {
             font-size: 20px;
         }
@@ -13,9 +14,11 @@
         }
     }
     &__item {
+        white-space: nowrap;
         font-size: 30px;
         margin-right: 40px;
         &:first-child {
+            margin-left: 20px;
             color: #f6ae48;
             &:hover {
                 color: #303263;
@@ -40,7 +43,7 @@
                 cursor: pointer;
                 color: #303263;
             }
-            @media (max-width: $bp-menuOn) {
+            @media (max-width: $bp-menuOff) {
                 display: none;
             }
         }
