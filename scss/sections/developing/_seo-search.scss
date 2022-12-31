@@ -1,0 +1,36 @@
+.seo-search {
+    display: flex;
+    justify-content: space-between;
+    max-width: 955px;
+    height: 465px;
+    margin-left: 70px;
+    margin-top: 176px;
+}
+
+.seo-text {
+    position: relative;
+    max-width: 568px;
+    @include flex($jc: space-evenly, $ai: flex-start, $fd: column);
+    &__title {
+        font-size: 36px;
+        z-index: 2;
+    }
+    &__back-title {
+        position: absolute;
+        top: 0;
+        left: -70px;
+        font-size: 80px;
+        font-weight: bold;
+        color: #cfcfcf;
+    }
+    &__text {
+        font-size: 24px;
+        line-height: 48px;
+    }
+}
+
+.seo-img {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}

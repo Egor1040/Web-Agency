@@ -1,0 +1,47 @@
+.credo {
+    background-image: linear-gradient(129deg, rgba(48,50,99,0.6730042358740371) 35%, rgba(48,50,99,1) 100%),
+    url(../img/credo-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    &-block {
+        @include flex($jc: center, $ai: center, $fd: column);
+        height: 566px;
+        @media (max-width: $bp-phone) {
+            height: auto;
+            padding: 20px 0;
+        }
+        &__title {
+            font-size: 50px;
+            font-weight: bold;
+            padding: 0 20px;
+            padding-bottom: 60px;
+            line-height: 48px;
+            @media (max-width: $cr-tablet) {
+                font-size: 40px;
+            }
+            @media (max-width: $bp-tablet2) {
+                font-size: 32px;
+            }
+        }
+        &__descr {
+            overflow: hidden;
+            padding: 0 20px;
+            color: $CredoColordescr;
+            font-size: 24px;
+            max-width: 1166px;
+            text-align: center;
+            line-height: 36px;
+            letter-spacing: 3.5px;
+            @media (max-width: $cr-tablet) {
+                font-size: 20px;
+            }
+            @media (max-width: $bp-tablet2) {
+                font-size: 16px;
+            }
+            @media (max-width: $bp-phone) {
+                letter-spacing: 1px;
+                line-height: 30px;
+            }
+        }
+    }
+}

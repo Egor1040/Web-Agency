@@ -1,0 +1,68 @@
+.choise {
+    position: relative;
+    display: flex;
+    padding-top: 210px;
+    padding-left: 60px;
+    &-item {
+        @include flex($jc: center, $ai: center, $fd: column);
+        margin-right: 20px;
+        width: 363px;
+        height: 315px;
+        &:nth-child(1) {
+            background-image: linear-gradient(to right top, #0e0f1293),
+            url(/img/choise1.png);
+        }
+        &:nth-child(2) {
+            background-image: linear-gradient(to right top, #0e0f1293),
+            url(/img/choise2.png);
+        }
+        &:nth-child(3) {
+            background-image: linear-gradient(to right top, #0e0f1293),
+            url(/img/choise3.png);
+            margin-right: 0;
+        }
+        &__lending {
+            height: 105px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            max-width: 262px;
+            color: #ffffff;
+            font-size: 50px;
+            line-height: 48.2px;
+            & span {
+                border-bottom: 2px solid #ffffff;
+            }
+        }
+    }
+}
+
+.button-choise {
+    padding-top: 45px;
+    width: 280px;
+    font-size: 24px;
+    @include flex($jc: space-between, $ai: center, $fd: row);
+    &__price {
+        &_blue {
+            width: 200px;
+            height: 56px;
+            border: 2px solid #00b9e7;
+            color: #ffffff;
+            @include flex;
+        }
+        &_yellow {
+            width: 200px;
+            height: 56px;
+            border: 2px solid #ffcb00;
+            color: #ffffff;
+            @include flex;
+        }
+        &_green {
+            width: 200px;
+            height: 56px;
+            border: 2px solid #66bf0d;
+            color: #ffffff;
+            @include flex;
+        }
+    }
+}

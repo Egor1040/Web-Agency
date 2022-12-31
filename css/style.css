@@ -1002,6 +1002,7 @@ li {
 }
 
 .last-projects__more {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1020,4 +1021,7 @@ li {
   width: 240px;
   height: 65px;
   border-radius: 10px;
+}
+.last-projects__more:hover {
+  background: rgba(106, 107, 142, 0.5215686275);
 }/*# sourceMappingURL=style.css.map */
