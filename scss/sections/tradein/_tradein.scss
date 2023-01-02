@@ -1,0 +1,64 @@
+.tradein {
+    max-height: 680px;
+    background-image: linear-gradient(129deg, rgba(48,50,99,0.6730042358740371) 35%, rgba(48,50,99,1) 100%),
+    url(../img/tradeinbackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    &-block {
+        @include flex($jc: center, $ai: center, $fd: column);
+        &__title {
+            padding: 55px 0;
+            max-height: 190px;
+            font-size: 48px;
+            line-height: 72px;
+            color: #ffffff;
+        }
+    }
+}
+
+.our-service {
+    @include flex($jc: center, $ai: flex-start, $fd: row);
+    column-gap: 30px;
+}
+
+.service-sequence {
+    &__descr {
+        color: #ffffff;
+        font-size: 18px;
+        letter-spacing: 0;
+        line-height: 30px;
+    }
+}
+
+.sequence {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    max-width: 415px;
+    &__img {
+        width: 70px;
+        height: 50px;
+    }
+    &__title {
+        overflow: hidden;
+        padding-left: 20px;
+        white-space: nowrap;
+        color: #ffffff;
+        font-size: 30px;
+        line-height: 72px;
+    }
+}
+
+.button-rating {
+    border: 0;
+    margin-top: 15px;
+    width: 330px;
+    height: 67px;
+    border-radius: 10px;
+    background: #f6ae48;
+    &__descr {
+        color: #ffffff;
+        font-size: 24px;
+    }
+}
