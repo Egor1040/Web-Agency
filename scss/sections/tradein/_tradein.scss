@@ -46,13 +46,14 @@
         white-space: nowrap;
         color: #ffffff;
         font-size: 30px;
-        line-height: 72px;
+        line-height: 50px;
     }
 }
 
 .button-rating {
     border: 0;
     margin-top: 15px;
+    margin-bottom: 45px;
     width: 330px;
     height: 67px;
     border-radius: 10px;
@@ -60,5 +61,8 @@
     &__descr {
         color: #ffffff;
         font-size: 24px;
+    }
+    &:hover {
+        background: #fb9301;
     }
 }
