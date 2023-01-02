@@ -1,0 +1,33 @@
+.adaptives {
+    max-height: 765px;
+    &-block {
+        height: 765px;
+    }
+}
+
+.adaptate-info {
+    padding-top: 210px;
+    max-width: 540px;
+    position: relative;
+    &__under-text {
+        color: #cfcfcf;
+        max-width: 438px;
+        font-size: 78px;
+        font-weight: bold;
+        line-height: 32px;
+        position: absolute;
+        top: 230px;
+        left: -55px;
+    }
+    &__title {
+        font-size: 36px;
+        line-height: 72px;
+        position: relative;
+        z-index: 2;
+    }
+    &__descr {
+        font-size: 24px;
+        line-height: 48px;
+        letter-spacing: 0;
+    }
+}
