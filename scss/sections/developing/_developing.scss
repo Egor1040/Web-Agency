@@ -15,6 +15,10 @@
     width: 666px;
     height: 527px;
     background: #f6ae48;
+    @media(max-width: 1170px) {
+        top: -20px;
+        left: -122px;
+    }
     &__name {
         font-size: 50px;
         padding-top: 85px;

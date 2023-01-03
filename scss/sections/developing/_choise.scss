@@ -3,6 +3,11 @@
     display: flex;
     padding-top: 210px;
     padding-left: 60px;
+    padding-right: 50px;
+    @media(max-width: 1170px) {
+        padding-top: 130px;
+        flex-wrap: wrap;
+    }
     &-item {
         @include flex($jc: center, $ai: center, $fd: column);
         margin-right: 20px;
@@ -20,6 +25,13 @@
             background-image: linear-gradient(to right top, #0e0f1293),
             url(/img/choise3.png);
             margin-right: 0;
+            @media(max-width: 1160px) {
+                margin-top: 20px;
+            }
+        }
+        @media(max-width: 1170px) {
+            width: 300px;
+            height: 215px;
         }
         &__lending {
             height: 105px;
@@ -32,6 +44,14 @@
             line-height: 48.2px;
             & span {
                 border-bottom: 2px solid #ffffff;
+            }
+            @media(max-width: 1170px) {
+                white-space: nowrap;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 29.2px;
+                display: flex;
+                justify-content: space-evenly;
             }
         }
     }
@@ -63,6 +83,11 @@
             border: 2px solid #66bf0d;
             color: #ffffff;
             @include flex;
+        }
+        @media(max-width: 1170px) {
+            width: 200px;
+            height: 50px;
+            
         }
     }
 }
