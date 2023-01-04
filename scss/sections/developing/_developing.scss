@@ -19,9 +19,28 @@
         top: -20px;
         left: -122px;
     }
+    @media(max-width: 740px) {
+        width: 589px;
+        height: 390px;
+    }
+    @media(max-width: 485px) {
+        width: 589px;
+        height: 390px;
+    }
+    @media(max-width: 490px) {
+        width: 540px;
+        height: 372px;
+        left: -98px;
+    }
+    @media(max-width: 360px) {
+        left: -111px;
+    }
     &__name {
         font-size: 50px;
         padding-top: 85px;
+        @media(max-width: 360px) {
+            font-size: 45px;
+        }
     }
     &__img {
     &_first {

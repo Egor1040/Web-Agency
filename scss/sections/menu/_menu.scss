@@ -1,12 +1,14 @@
 .menu {
     background: #ffffff;
     z-index: 10;
+    border-bottom: 1px solid gray;
     &_fixed {
         animation: fixedMenu 1s forwards;
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
+        z-index: 1000;
     }
     @keyframes fixedMenu {
         0% {

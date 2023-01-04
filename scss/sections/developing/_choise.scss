@@ -2,11 +2,14 @@
     position: relative;
     display: flex;
     padding-top: 210px;
-    padding-left: 60px;
+    padding-left: 20px;
     padding-right: 50px;
     @media(max-width: 1170px) {
         padding-top: 130px;
         flex-wrap: wrap;
+    }
+    @media(max-width: 730px) {
+        flex-direction: column;
     }
     &-item {
         @include flex($jc: center, $ai: center, $fd: column);
@@ -16,6 +19,9 @@
         &:nth-child(1) {
             background-image: linear-gradient(to right top, #0e0f1293),
             url(/img/choise1.png);
+            @media(max-width: 770px) {
+                margin-bottom: 20px;
+             }
         }
         &:nth-child(2) {
             background-image: linear-gradient(to right top, #0e0f1293),
@@ -25,13 +31,21 @@
             background-image: linear-gradient(to right top, #0e0f1293),
             url(/img/choise3.png);
             margin-right: 0;
-            @media(max-width: 1160px) {
+            @media(max-width: 1027px) {
                 margin-top: 20px;
             }
         }
         @media(max-width: 1170px) {
             width: 300px;
             height: 215px;
+        }
+        @media(max-width: 770px) {
+            flex-direction: column;
+        }
+        @media(max-width: 360px) {
+            padding-right: 0;
+            width: 270px;
+            height: 215px; 
         }
         &__lending {
             height: 105px;
@@ -62,6 +76,9 @@
     width: 280px;
     font-size: 24px;
     @include flex($jc: space-between, $ai: center, $fd: row);
+    @media(max-width: 360px) {
+        width: 260px;
+    }
     &__price {
         &_blue {
             width: 200px;
