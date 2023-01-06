@@ -107,4 +107,7 @@
             
         }
     }
+    &__img {
+        animation: slideInLeft 3s infinite ease alternate-reverse;
+    }
 }

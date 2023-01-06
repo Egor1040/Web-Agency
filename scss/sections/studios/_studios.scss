@@ -62,8 +62,13 @@
         overflow: hidden;
         padding: 20px;
         width: 400px;
+        height: 345px;
+        &:hover {
+            background: #f6ae48;
+            color: #ffffff;
+        }
         &:first-child {
-            padding-left: 0;
+            padding-left: 0; 
             @media (max-width: $st-laptop) {
                 padding: 20px;
             }
@@ -117,6 +122,9 @@
         & p {
             font-size: 18px;
             letter-spacing: 0;
-            }
+        }
+    }
+    &__img {
+        animation: slideInLeft 2s infinite ease alternate-reverse;
     }
 }
