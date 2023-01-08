@@ -1,4 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap");
+@font-face {
+  font-family: "PT Sans Caption";
+  src: url("PTSans-Caption.eot");
+  src: url("PTSans-Caption.eot?#iefix") format("embedded-opentype"), url("PTSans-Caption.woff2") format("woff2"), url("PTSans-Caption.woff") format("woff"), url("PTSans-Caption.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Parangon 530C";
+  src: url("../fonts/Parangon530C.eot");
+  src: url("../fonts/Parangon530C.eot?#iefix") format("embedded-opentype"), url("../fonts/Parangon530C.woff2") format("woff2"), url("../fonts/Parangon530C.woff") format("woff"), url("../fonts/Parangon530C.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
   font-size: 24px;
   font-family: "PT Sans Caption", sans-serif;
@@ -18,6 +33,7 @@
 a, img {
   display: block;
   text-decoration: none;
+  color: black;
 }
 
 li {
@@ -31,11 +47,19 @@ li {
 }
 
 .title {
+  font-family: "Parangon 530C";
   color: white;
   text-align: center;
 }
 .title_h1 {
   line-height: 72px;
+}
+
+@media (max-width: 800px) {
+  .animate__animated {
+    -webkit-animation: none;
+            animation: none;
+  }
 }
 
 .hero {
@@ -89,6 +113,7 @@ li {
           flex-direction: column;
 }
 .hero-content__title {
+  font-family: "Parangon 530C";
   padding: 0 20px;
   margin-bottom: 25px;
 }
@@ -351,7 +376,6 @@ li {
 }
 .menu__item:first-child:hover {
   color: #303263;
-  cursor: pointer;
 }
 @media (max-width: 930px) {
   .menu__item:first-child {
@@ -368,10 +392,9 @@ li {
   }
 }
 .menu__item:last-child {
-  margin-right: 0;
+  margin-right: 0px;
 }
 .menu__item_passive:hover {
-  cursor: pointer;
   color: #303263;
 }
 @media (max-width: 930px) {
@@ -427,7 +450,6 @@ li {
   }
 }
 .menu__item-button:hover {
-  cursor: pointer;
   background: rgba(48, 50, 99, 0.5882352941);
 }
 .menu__item-button:hover .button-click {
@@ -671,9 +693,6 @@ li {
   font-size: 18px;
   letter-spacing: 0;
 }
-.button-block__img {
-  animation: slideInLeft 2s infinite ease alternate-reverse;
-}
 
 .credo {
   background-image: linear-gradient(129deg, rgba(48, 50, 99, 0.6730042359) 35%, rgb(48, 50, 99) 100%), url(../img/credo-background.png);
@@ -799,10 +818,13 @@ li {
 .frame__name {
   font-size: 50px;
   padding-top: 85px;
+  padding-left: 80px;
+  letter-spacing: 5px;
 }
-@media (max-width: 360px) {
+@media (max-width: 430px) {
   .frame__name {
-    font-size: 45px;
+    font-size: 35px;
+    padding-left: inherit;
   }
 }
 .frame__img_first {
@@ -811,8 +833,6 @@ li {
   left: -100px;
 }
 .frame__img_second {
-  -webkit-animation: rotate 10s linear infinite;
-          animation: rotate 10s linear infinite;
   position: absolute;
   top: -35px;
   right: -70px;
@@ -849,7 +869,7 @@ li {
 }
 @media (max-width: 1170px) {
   .choise {
-    padding-top: 130px;
+    padding-top: 170px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -1045,9 +1065,6 @@ li {
     height: 50px;
   }
 }
-.button-choise__img {
-  animation: slideInLeft 3s infinite ease alternate-reverse;
-}
 
 .seo-search {
   display: -webkit-box;
@@ -1103,6 +1120,8 @@ li {
           flex-direction: column;
 }
 .seo-text__title {
+  font-family: "Parangon 530C";
+  font-weight: bold;
   font-size: 36px;
   z-index: 10;
   position: relative;
@@ -1132,10 +1151,10 @@ li {
   .seo-text__title {
     font-size: 20px;
     white-space: nowrap;
-    font-weight: bold;
   }
 }
 .seo-text__back-title {
+  font-family: "PT Sans Caption", sans-serif;
   position: absolute;
   font-size: 80px;
   font-weight: bold;
@@ -1172,6 +1191,11 @@ li {
   .seo-text__text {
     line-height: 20px;
     font-size: 16px;
+  }
+}
+@media (max-width: 460px) {
+  .seo-text__text {
+    margin-top: 10px;
   }
 }
 @media (max-width: 370px) {
@@ -1242,23 +1266,37 @@ li {
       -ms-flex-direction: row;
           flex-direction: row;
 }
-.last-projects__under-text {
-  font-size: 96px;
-  font-weight: bold;
-  color: rgba(193, 193, 193, 0.4980392157);
-  position: absolute;
-  top: -40px;
-  left: -200px;
-  z-index: 0;
-  white-space: nowrap;
-  letter-spacing: 6px;
-}
 .last-projects__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   white-space: nowrap;
   position: relative;
   font-size: 36px;
   color: #ffffff;
   z-index: 3;
+}
+.last-projects__under-text {
+  line-height: 1;
+  font-size: 96px;
+  font-weight: bold;
+  color: rgba(193, 193, 193, 0.4980392157);
+  position: absolute;
+  z-index: -1;
+  top: -35px;
+  letter-spacing: 15px;
+  white-space: nowrap;
+  font-family: "PT Sans Caption", sans-serif;
 }
 
 .projects-block__title-img {
@@ -1279,6 +1317,7 @@ li {
 }
 
 .last-projects__more {
+  font-family: "Parangon 530C";
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1314,40 +1353,70 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .adaptate-info {
-  padding-top: 210px;
   max-width: 540px;
+  height: 396px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.adaptate-info__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: "Parangon 530C";
+  font-size: 36px;
+  line-height: 72px;
   position: relative;
 }
 .adaptate-info__under-text {
+  font-family: "PT Sans Caption", sans-serif;
   color: #cfcfcf;
   max-width: 438px;
   font-size: 78px;
   font-weight: bold;
-  line-height: 32px;
+  letter-spacing: 8px;
   position: absolute;
-  top: 230px;
-  left: -55px;
-}
-.adaptate-info__title {
-  font-size: 36px;
-  line-height: 72px;
-  position: relative;
-  z-index: 2;
+  left: -50px;
+  z-index: -1;
 }
 .adaptate-info__descr {
   font-size: 24px;
   line-height: 48px;
   letter-spacing: 0;
-}
-
-.adaptate-img {
-  padding-top: 210px;
 }
 
 .tradein {
@@ -1376,6 +1445,7 @@ li {
   padding: 55px 0;
   max-height: 190px;
   font-size: 48px;
+  font-family: "Parangon 530C";
   line-height: 72px;
   color: #ffffff;
 }
@@ -1421,6 +1491,7 @@ li {
   height: 50px;
 }
 .sequence__title {
+  font-family: "Parangon 530C";
   overflow: hidden;
   padding-left: 20px;
   white-space: nowrap;
@@ -1440,6 +1511,7 @@ li {
   background: #f6ae48;
 }
 .button-rating__descr {
+  font-family: "Parangon 530C";
   color: #ffffff;
   font-size: 24px;
 }
@@ -1461,25 +1533,56 @@ li {
 }
 
 .care {
-  position: relative;
   max-width: 594px;
   margin-top: 163px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.care__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #000000;
+  position: relative;
+  z-index: 10;
+  font-size: 36px;
+  font-family: "Parangon 530C";
+  white-space: nowrap;
 }
 .care__under-text {
   font-size: 72px;
   color: #cfcfcf;
   position: absolute;
-  top: -25px;
-  left: -35px;
-}
-.care__title {
-  position: relative;
-  z-index: 10;
-  font-size: 36px;
+  top: -22px;
+  letter-spacing: 7px;
+  font-family: "PT Sans Caption", sans-serif;
   font-weight: bold;
+  white-space: nowrap;
+  line-height: 1;
+  z-index: -1;
 }
 .care__descr {
-  margin-top: 40px;
+  margin-top: 31px;
   font-size: 24px;
   line-height: 42px;
   letter-spacing: 0;
@@ -1520,6 +1623,8 @@ li {
   color: #ffffff;
 }
 .reverse__title {
+  white-space: nowrap;
+  font-family: "Parangon 530C";
   font-size: 30px;
   line-height: 1;
   padding-bottom: 50px;

@@ -1,4 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap');
+@font-face {
+    font-family: "PT Sans Caption";
+    src: url('PTSans-Caption.eot');
+    src: url('PTSans-Caption.eot?#iefix') format('embedded-opentype'),
+        url('PTSans-Caption.woff2') format('woff2'),
+        url('PTSans-Caption.woff') format('woff'),
+        url('PTSans-Caption.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Parangon 530C';
+    src: url('../fonts/Parangon530C.eot');
+    src: url('../fonts/Parangon530C.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Parangon530C.woff2') format('woff2'),
+        url('../fonts/Parangon530C.woff') format('woff'),
+        url('../fonts/Parangon530C.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     font-size: 24px;
     font-family: "PT Sans Caption", sans-serif;
@@ -17,6 +41,7 @@
 a, img {
     display: block;
     text-decoration: none;
+    color: black;
 }
 
 li {
@@ -30,9 +55,16 @@ li {
 }
 
 .title {
+    font-family: 'Parangon 530C';
     color: white;
     text-align: center;
     &_h1 {
         line-height: 72px;
+    }
+}
+
+.animate__animated {
+    @media (max-width: 800px) {
+        animation: none;
     }
 }

@@ -15,6 +15,8 @@
     height: 325px;
     color: #ffffff;
     &__title {
+        white-space: nowrap;
+        font-family: 'Parangon 530C';
         font-size: 30px;
         line-height: 1;
         padding-bottom: 50px;

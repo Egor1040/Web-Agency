@@ -38,8 +38,11 @@
     &__name {
         font-size: 50px;
         padding-top: 85px;
-        @media(max-width: 360px) {
-            font-size: 45px;
+        padding-left: 80px;
+        letter-spacing: 5px;
+        @media(max-width: 430px) {
+            font-size: 35px;
+            padding-left: inherit;
         }
     }
     &__img {
@@ -49,7 +52,6 @@
         left: -100px;
     }
     &_second {
-        animation: rotate 10s linear infinite;
         position: absolute;
         top: -35px;
         right: -70px;

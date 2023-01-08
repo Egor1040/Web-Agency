@@ -20,6 +20,7 @@
 .hero-content {
     @include flex(center, center, column);
     &__title {
+        font-family: 'Parangon 530C';
         padding: 0 20px;
         margin-bottom: 25px;
         @include for-tablet {

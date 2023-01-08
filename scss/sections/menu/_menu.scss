@@ -46,7 +46,6 @@
             color: #f6ae48;
             &:hover {
                 color: #303263;
-                cursor: pointer;
             }
             @media (max-width: 930px) {
                 margin-right: 20px;
@@ -60,11 +59,10 @@
             }
         }
         &:last-child {
-            margin-right: 0;
+            margin-right: 0px;
         }
         &_passive {
             &:hover {
-                cursor: pointer;
                 color: #303263;
             }
             @media (max-width: $bp-menuOff) {
@@ -106,7 +104,6 @@
                 }
             }
             &:hover {
-                cursor: pointer;
                 background: #30326396;
             }
             &:hover .button-click {

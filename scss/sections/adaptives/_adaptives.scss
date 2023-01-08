@@ -7,36 +7,37 @@
 
 .adaptives-block {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .adaptate-info {
-    padding-top: 210px;
     max-width: 540px;
-    position: relative;
+    height: 396px;
+    @include flex($jc: center, $ai: flex-start, $fd: column);
+    &__title {
+        @include flex($jc: flex-start, $ai: center, $fd: row);
+        font-family: 'Parangon 530C';
+        font-size: 36px;
+        line-height: 72px;
+        position: relative;
+    }
     &__under-text {
+        font-family: "PT Sans Caption", sans-serif;
         color: #cfcfcf;
         max-width: 438px;
         font-size: 78px;
         font-weight: bold;
-        line-height: 32px;
+        letter-spacing: 8px;
         position: absolute;
-        top: 230px;
-        left: -55px;
-    }
-    &__title {
-        font-size: 36px;
-        line-height: 72px;
-        position: relative;
-        z-index: 2;
+        left: -50px;
+        z-index: -1;
     }
     &__descr {
         font-size: 24px;
         line-height: 48px;
         letter-spacing: 0;
     }
-}
-
-.adaptate-img {
-    padding-top: 210px;
 }

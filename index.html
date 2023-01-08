@@ -6,27 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="./img/icon/siteicons.png">
     <title>WEB Agency</title>
 </head>
 <body>
     <div class="menu">
         <div class="container">  
             <nav class="menu-block">
-                <li class="menu__item">Главная</li>
-                <li class="menu__item menu__item_passive">О нас</li>
-                <li class="menu__item menu__item_passive">Услуги</li>
-                <li class="menu__item menu__item_passive">Наши работы</li>
-                <li class="menu__item menu__item_passive">Контакты</li>
-                <li class="menu__item-button">
+                <a href="#" class="menu__item wow animate__animated animate__flipInX">Главная</a>
+                <a href="#" class="menu__item menu__item_passive wow animate__animated animate__flipInX">О нас</a>
+                <a href="#" class="menu__item menu__item_passive wow animate__animated animate__flipInX">Услуги</a>
+                <a href="#" class="menu__item menu__item_passive wow animate__animated animate__flipInX">Наши работы</a>
+                <a href="#" class="menu__item menu__item_passive wow animate__animated animate__flipInX">Контакты</a>
+                <div class="menu__item-button">
                     <span></span>
-                    <div class="button-click">
-                        <div class="button-click__item">О нас</div>
-                        <div class="button-click__item">Услуги</div>
-                        <div class="button-click__item">Наши работы</div>
-                        <div class="button-click__item">Контакты</div>
-                    </div>
-                </li>
+                    <nav class="button-click">
+                        <a href="#" class="button-click__item">О нас</a>
+                        <a href="#" class="button-click__item">Услуги</a>
+                        <a href="#" class="button-click__item">Наши работы</a>
+                        <a href="#" class="button-click__item">Контакты</a>
+                    </nav>
+                </div>
             </nav>
         </div>  
     </div>
@@ -119,7 +118,7 @@
                         <div class="button-block__price">
                             <p>от 1000 грн</p>
                         </div>
-                        <div class="button-block__img">
+                        <div class="button-block__img animate__animated">
                             <img src="./img/icon/Rightarrowicon.png" alt="">
                         </div>
                     </div>
@@ -193,7 +192,7 @@
                     <div class="seo-text">
                         <span class="seo-text__title">
                             ПЕРВЫЕ В ПОИСКЕ
-                            <span class="seo-text__back-title">BE THE FIRST</span>
+                            <p class="seo-text__back-title">BE THE FIRST</p>
                         </span>
                         
                         <p class="seo-text__text">
@@ -217,8 +216,10 @@
     <div class="projects">
         <div class="last-projects">
             <div class="container">
-                <span class="last-projects__under-text">OUR PROJECTS</span>
-                <p class="last-projects__text">ПОСЛЕДНИЕ ПРОЕКТЫ</p>
+                <span class="last-projects__text title">
+                    ПОСЛЕДНИЕ ПРОЕКТЫ
+                    <span class="last-projects__under-text">OUR PROJECTS</span>
+                </span>
             </div>
         </div>
         <div class="container">
@@ -244,8 +245,10 @@
         <div class="container">
             <div class="adaptives-block">
                 <div class="adaptate-info">
-                    <span class="adaptate-info__under-text">ADAPTATE</span>
-                    <h4 class="adaptate-info__title">АДАПТИВНОСТЬ</h4>
+                    <div class="adaptate-info__title">
+                        АДАПТИВНОСТЬ
+                        <span class="adaptate-info__under-text">ADAPTATE</span>
+                    </div>
                     <p class="adaptate-info__descr">
                         Зачем ограничивать свой бизнес только 
                         пользователями стандартных компьютеров 
@@ -336,8 +339,10 @@
         <div class="container">
             <div class="careful-block">
                 <div class="care">
-                    <span class="care__under-text">BE CAREFUL</span>
-                    <div class="care__title">ЗАБОТА О КАЖДОМ</div>
+                    <div class="care__title">
+                        <h4>ЗАБОТА О КАЖДОМ</h4>
+                        <span class="care__under-text">BE CAREFUL</span>
+                    </div>
                     <p class="care__descr">
                         Рожденный в нашей студии проект обречен
                         на пожизненную поддержку. Мы обучим вас

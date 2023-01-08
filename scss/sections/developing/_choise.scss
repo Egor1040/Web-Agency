@@ -5,7 +5,7 @@
     padding-left: 20px;
     padding-right: 50px;
     @media(max-width: 1170px) {
-        padding-top: 130px;
+        padding-top: 170px;
         flex-wrap: wrap;
     }
     @media(max-width: 730px) {
@@ -106,8 +106,5 @@
             height: 50px;
             
         }
-    }
-    &__img {
-        animation: slideInLeft 3s infinite ease alternate-reverse;
     }
 }

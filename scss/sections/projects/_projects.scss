@@ -9,23 +9,25 @@
     height: 120px;
     background: #303263;
     @include flex;
-    &__under-text {
-        font-size: 96px;
-        font-weight: bold;
-        color: #c1c1c17f;
-        position: absolute;
-        top: -40px;
-        left: -200px;
-        z-index: 0;
-        white-space: nowrap;
-        letter-spacing: 6px;
-    }
     &__text {
+        @include flex;
         white-space: nowrap;
         position: relative;
         font-size: 36px;
         color: #ffffff;
         z-index: 3;
+    }
+    &__under-text {
+        line-height: 1;
+        font-size: 96px;
+        font-weight: bold;
+        color: #c1c1c17f;
+        position: absolute;
+        z-index: -1;
+        top: -35px;
+        letter-spacing: 15px;
+        white-space: nowrap;
+        font-family: "PT Sans Caption", sans-serif;
     }
 }
 
@@ -46,6 +48,7 @@
 
 .last-projects {
     &__more {
+        font-family: 'Parangon 530C';
         cursor: pointer;
         @include flex;
         background: #6a6b8e;
