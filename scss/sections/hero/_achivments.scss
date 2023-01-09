@@ -86,6 +86,8 @@ $achivIconWidth: 28px;
     }
 
     &__descr {
+        max-width: 218px;
+        max-height: 21px;
         text-align: center;
         font-size: .75rem;
         @media (max-width: $bp-phone) {

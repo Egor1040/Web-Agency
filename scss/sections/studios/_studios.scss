@@ -76,6 +76,11 @@
         &__img {
             height: 45px;
             margin-bottom: 10px;
+            &_last {
+                fill: #00b9e7;
+                height: 45px;
+                width: 30px;
+            }
         }
         &__title {
             font-size: 20px;
@@ -84,14 +89,17 @@
         }
         &__text {
             font-size: 15px;
-            letter-spacing: 0.3px;
+            letter-spacing: 0.1px;
             line-height: 1.6;
         }
         &_community {
-            color: white;
-            background: #f6ae48;
+            color: #000000;
             width: 400px;
             height: 345px;
+            &:hover {
+                background: #f6ae48;
+                color: white;
+            }
             @media (max-width: 370px) {
                 height: auto;
             }
@@ -112,7 +120,7 @@
 }
 
 .button-block {
-    @include flex($jc: space-between,$ai: center,$fd: row);
+    display: none;
     margin-top: 20px;
     &__price {
         @include flex;
@@ -124,4 +132,9 @@
             letter-spacing: 0;
         }
     }
+}
+
+.special__service:hover .button-block{
+    @include flex($jc: space-between,$ai: center,$fd: row);
+    display: flex;
 }

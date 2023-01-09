@@ -113,6 +113,8 @@ li {
           flex-direction: column;
 }
 .hero-content__title {
+  max-height: 150px;
+  overflow: hidden;
   font-family: "Parangon 530C";
   padding: 0 20px;
   margin-bottom: 25px;
@@ -276,6 +278,8 @@ li {
   }
 }
 .achivments__descr {
+  max-width: 218px;
+  max-height: 21px;
   text-align: center;
   font-size: 0.75rem;
 }
@@ -322,6 +326,7 @@ li {
   }
 }
 .menu-block {
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -610,6 +615,11 @@ li {
   height: 45px;
   margin-bottom: 10px;
 }
+.special__service__img_last {
+  fill: #00b9e7;
+  height: 45px;
+  width: 30px;
+}
 .special__service__title {
   font-size: 20px;
   margin-bottom: 10px;
@@ -617,14 +627,17 @@ li {
 }
 .special__service__text {
   font-size: 15px;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.1px;
   line-height: 1.6;
 }
 .special__service_community {
-  color: white;
-  background: #f6ae48;
+  color: #000000;
   width: 400px;
   height: 345px;
+}
+.special__service_community:hover {
+  background: #f6ae48;
+  color: white;
 }
 @media (max-width: 370px) {
   .special__service_community {
@@ -656,19 +669,7 @@ li {
 }
 
 .button-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  display: none;
   margin-top: 20px;
 }
 .button-block__price {
@@ -692,6 +693,23 @@ li {
 .button-block__price p {
   font-size: 18px;
   letter-spacing: 0;
+}
+
+.special__service:hover .button-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: flex;
 }
 
 .credo {

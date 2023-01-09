@@ -24,6 +24,7 @@
         }
     }
     &-block {
+        overflow: hidden;
         @include flex($jc:flex-end, $ai:center, $fd:row);
         max-height: 100px;
         padding: 30px 0;

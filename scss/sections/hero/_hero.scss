@@ -20,6 +20,8 @@
 .hero-content {
     @include flex(center, center, column);
     &__title {
+        max-height: 150px;
+        overflow: hidden;
         font-family: 'Parangon 530C';
         padding: 0 20px;
         margin-bottom: 25px;
