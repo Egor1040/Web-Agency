@@ -578,6 +578,9 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 585px;
 }
 @media (max-width: 1060px) {
@@ -594,6 +597,7 @@ li {
   }
 }
 .special__service {
+  cursor: pointer;
   overflow: hidden;
   padding: 20px;
   width: 400px;
@@ -617,6 +621,7 @@ li {
 }
 .special__service__img_last {
   fill: #00b9e7;
+  font-weight: bold;
   height: 45px;
   width: 30px;
 }
@@ -629,6 +634,11 @@ li {
   font-size: 15px;
   letter-spacing: 0.1px;
   line-height: 1.6;
+}
+@media (max-width: 400px) {
+  .special__service__text {
+    line-height: 1.1;
+  }
 }
 .special__service_community {
   color: #000000;

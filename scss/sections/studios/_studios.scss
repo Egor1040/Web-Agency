@@ -51,6 +51,7 @@
 .special {
     background: white;
     display: flex;
+    justify-content: center;
     height: 585px;
     @media (max-width: $st-laptop) {
         display: flex;
@@ -59,6 +60,7 @@
         height: auto;
     }
     &__service {
+        cursor: pointer;
         overflow: hidden;
         padding: 20px;
         width: 400px;
@@ -68,7 +70,7 @@
             color: #ffffff;
         }
         &:first-child {
-            padding-left: 0; 
+            padding-left: 0;
             @media (max-width: $st-laptop) {
                 padding: 20px;
             }
@@ -78,6 +80,7 @@
             margin-bottom: 10px;
             &_last {
                 fill: #00b9e7;
+                font-weight: bold;
                 height: 45px;
                 width: 30px;
             }
@@ -91,6 +94,9 @@
             font-size: 15px;
             letter-spacing: 0.1px;
             line-height: 1.6;
+            @media (max-width: 400px) {
+                line-height: 1.1;
+            }
         }
         &_community {
             color: #000000;
