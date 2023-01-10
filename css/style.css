@@ -940,8 +940,8 @@ li {
   height: 315px;
 }
 .choise-item:nth-child(1) {
-  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(14, 15, 18, 0.5764705882))), url(/img/choise1.png);
-  background-image: linear-gradient(to right top, rgba(14, 15, 18, 0.5764705882)), url(/img/choise1.png);
+  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(14, 15, 18, 0.5764705882))), url(../img/choise1.png);
+  background-image: linear-gradient(to right top, rgba(14, 15, 18, 0.5764705882)), url(../img/choise1.png);
 }
 @media (max-width: 770px) {
   .choise-item:nth-child(1) {
@@ -949,12 +949,12 @@ li {
   }
 }
 .choise-item:nth-child(2) {
-  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(14, 15, 18, 0.5764705882))), url(/img/choise2.png);
-  background-image: linear-gradient(to right top, rgba(14, 15, 18, 0.5764705882)), url(/img/choise2.png);
+  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(14, 15, 18, 0.5764705882))), url(../img/choise2.png);
+  background-image: linear-gradient(to right top, rgba(14, 15, 18, 0.5764705882)), url(../img/choise2.png);
 }
 .choise-item:nth-child(3) {
-  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(14, 15, 18, 0.5764705882))), url(/img/choise3.png);
-  background-image: linear-gradient(to right top, rgba(14, 15, 18, 0.5764705882)), url(/img/choise3.png);
+  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(14, 15, 18, 0.5764705882))), url(../img/choise3.png);
+  background-image: linear-gradient(to right top, rgba(14, 15, 18, 0.5764705882)), url(../img/choise3.png);
   margin-right: 0;
 }
 @media (max-width: 1027px) {
