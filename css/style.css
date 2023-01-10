@@ -289,6 +289,7 @@ li {
 .achivments__descr {
   max-width: 218px;
   max-height: 21px;
+  overflow: hidden;
   text-align: center;
   font-size: 0.75rem;
 }
@@ -381,7 +382,7 @@ li {
 }
 .menu__item {
   white-space: nowrap;
-  font-size: 30px;
+  font-size: 1.25rem;
   margin-right: 40px;
 }
 .menu__item:first-child {
@@ -542,6 +543,7 @@ li {
 @media (max-width: 750px) {
   .specializations__title {
     font-size: 24px;
+    padding-bottom: 20px;
   }
 }
 .specializations__text {
