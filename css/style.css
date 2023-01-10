@@ -1851,4 +1851,9 @@ li {
 }
 .footer-form__button:hover {
   background: #dc8c1b;
+}
+
+.footer {
+  height: 110px;
+  background: #f6ae48;
 }/*# sourceMappingURL=style.css.map */
