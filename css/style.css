@@ -45,6 +45,15 @@ li {
   max-width: 1245px;
   margin: 0 auto;
 }
+.container__frame {
+  max-width: 1245px;
+  overflow: hidden;
+}
+.container__last-projects {
+  position: relative;
+  max-width: 1245px;
+  margin: 0 auto;
+}
 
 .title {
   font-family: "Parangon 530C";
@@ -464,7 +473,7 @@ li {
 
 .button-click {
   position: absolute;
-  top: 0px;
+  top: -25px;
   left: 50px;
   width: 173px;
   height: 100px;

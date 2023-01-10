@@ -52,6 +52,15 @@ li {
     position: relative;
     max-width: 1245px;
     margin: 0 auto;
+    &__frame {
+        max-width: 1245px;
+        overflow: hidden;
+    }
+    &__last-projects {
+        position: relative;
+        max-width: 1245px;
+        margin: 0 auto;
+    }
 }
 
 .title {
