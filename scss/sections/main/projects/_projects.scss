@@ -1,0 +1,86 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.last-projects {
+    height: 120px;
+    background: #303263;
+    @include flex;
+    @media (max-width: 1245px) {
+        height: calc(60px + (120 - 60) * ((100vw - 320px) / (1245 - 320)));;
+    }
+    &__text {
+        @include flex;
+        white-space: nowrap;
+        position: relative;
+        font-size: 36px;
+        font-weight: bold;
+        color: #ffffff;
+        z-index: 3;
+        @media (max-width: 1245px) {
+            font-size: calc(20px + (36 - 20) * ((100vw - 320px) / (1245 - 320)));
+        }
+    }
+    &__under-text {
+        line-height: 1;
+        font-size: 96px;
+        font-weight: bold;
+        color: #c1c1c17f;
+        position: absolute;
+        z-index: -1;
+        letter-spacing: 15px;
+        white-space: nowrap;
+        font-family: "PT Sans Caption", sans-serif;
+        @media (max-width: 1245px) {
+            font-size: calc(30px + (96 - 30) * ((100vw - 320px) / (1245 - 320)));
+            letter-spacing: calc(7px + (15 - 7) * ((100vw - 320px) / (1245 - 320)));
+        }
+    }
+}
+
+.projects-block {
+    @include flex;
+        flex-wrap: wrap;
+    &__img {
+        object-fit: cover;
+        width: calc(100% / 4);
+       &:nth-child(1),
+       &:nth-child(2) {
+        width: calc(100% / 2);
+       }
+        @media (max-width: 930px) {
+            &:nth-child(1),
+            &:nth-child(2) {
+            width: calc(100%);
+            }
+            width: calc(100% / 2);
+        }
+    }
+}
+
+.last-projects {
+    &__more {
+        font-size: 24px;
+        font-weight: bold;
+        cursor: pointer;
+        @include flex;
+        background: #6a6b8e;
+        color: #ffffff;
+        white-space: nowrap;
+        width: 240px;
+        height: 65px;
+        border-radius: 10px;
+        border: none;
+        @media (max-width: 1245px) {
+            width: calc(160px + (240 - 160) * ((100vw - 320px) / (1245 - 320)));;
+            height: calc(30px + (65 - 30) * ((100vw - 320px) / (1245 - 320)));;
+            font-size: calc(20px + (24 - 20) * ((100vw - 320px) / (1245 - 320)));
+        }
+        &:hover {
+            background: #6a6b8e85;
+        }
+    }
+    
+}

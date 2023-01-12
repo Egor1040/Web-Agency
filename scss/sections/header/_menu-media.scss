@@ -1,0 +1,42 @@
+.menu {
+    &-block {
+        @include for-laptop {
+            font-size: 20px;
+        }
+        @include for-tablet {
+            font-size: 16px;
+        }
+        @media (max-width: 935px) {
+            @include flex($jc:flex-start, $ai:center, $fd:row)
+        }
+    }
+    &__item {
+        &:first-child {
+            @media (max-width: 930px) {
+                margin-right: 20px;
+                margin-left: 20px;
+            }
+            @media (max-width: 400px) {
+                margin-right: 5px;
+                margin-left: 5px;
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+        &_passive {
+            @media (max-width: $bp-menuOff) {
+                display: none;
+            }
+        }
+        &-button {
+            @media (min-width: 930px) {
+                display: none;
+            }
+            & img {
+                @media (max-width: 650px) {
+                    width: 21px;
+                }
+            }
+        }
+    }
+}

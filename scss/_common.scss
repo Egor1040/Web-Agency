@@ -1,23 +1,10 @@
 @font-face {
     font-family: "PT Sans Caption";
-    src: url('PTSans-Caption.eot');
-    src: url('PTSans-Caption.eot?#iefix') format('embedded-opentype'),
-        url('PTSans-Caption.woff2') format('woff2'),
-        url('PTSans-Caption.woff') format('woff'),
-        url('PTSans-Caption.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-
-@font-face {
-    font-family: 'Parangon 530C';
-    src: url('../fonts/Parangon530C.eot');
-    src: url('../fonts/Parangon530C.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Parangon530C.woff2') format('woff2'),
-        url('../fonts/Parangon530C.woff') format('woff'),
-        url('../fonts/Parangon530C.ttf') format('truetype');
+    src: url('../fonts/PTSans-Caption.eot');
+    src: url('../fonts/PTSans-Caption.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PTSans-Caption.woff2') format('woff2'),
+        url('../fonts/PTSans-Caption.woff') format('woff'),
+        url('../fonts/PTSans-Caption.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;

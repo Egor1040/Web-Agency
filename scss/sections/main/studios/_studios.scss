@@ -12,6 +12,7 @@
         @include flex($jc: center, $ai: flex-start, $fd: column)
     }
     &__title {
+        color: #000000;
         font-size: 48px;
         font-weight: bold;
         @media (max-width: $st-tablet) {
@@ -68,10 +69,9 @@
         height: 345px;
         &:hover {
             background: #f6ae48;
-            color: #ffffff;
+            color: white;
         }
         &:first-child {
-            padding-left: 0;
             @media (max-width: $st-laptop) {
                 padding: 20px;
             }
@@ -87,6 +87,8 @@
             }
         }
         &__title {
+            display: flex;
+            justify-content: flex-start;
             font-size: 20px;
             margin-bottom: 10px;
             line-height: 1;

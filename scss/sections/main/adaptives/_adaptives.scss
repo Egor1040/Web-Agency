@@ -1,0 +1,100 @@
+.adaptives-block {
+    height: 765px;
+    padding: 0 20px;
+    @include flex ($jc: space-between, $ai: center, $fd: row);
+    @media (max-width: 1270px) {
+        justify-content: center;
+        flex-wrap: wrap;
+        height: calc(410px + (765 - 410) * ((100vw - 320px) / (1245 - 320)));
+    }
+}
+
+.adaptate-info {
+    position: relative;
+    max-width: 540px;
+    height: 396px;
+    @include flex($jc: center, $ai: flex-start, $fd: column);
+    &__descr {
+        font-size: 24px;
+        line-height: 48px;
+        letter-spacing: 0;
+        @media (max-width: 1245px) {
+            font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1245 - 320)));
+        }
+        @media (max-width: 1245px) {
+            line-height: calc(16px + (48 - 16) * ((100vw - 320px) / (1245 - 320)));
+        }
+    }
+}
+
+.adaptate-heading {
+    &__title {
+        @include flex($jc: flex-start, $ai: center, $fd: row);
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 72px;
+        position: relative;
+        @media (max-width: 1245px) {
+            font-size: calc(20px + (36 - 20) * ((100vw - 320px) / (1245 - 320)));
+        }
+    }
+    &__under-text {
+        font-family: "PT Sans Caption", sans-serif;
+        color: #cfcfcf;
+        max-width: 438px;
+        font-size: 78px;
+        font-weight: bold;
+        letter-spacing: 8px;
+        position: absolute;
+        left: -50px;
+        z-index: -1;
+        @media (max-width: 1245px) {
+            font-size: calc(35px + (78 - 35) * ((100vw - 320px) / (1245 - 320)));
+        }
+    }
+}
+
+.adaptate-img {
+    position: absolute;
+    left: 733px;
+    z-index: -1;
+    display: flex;
+    align-items: flex-end;
+    @media (max-width: 1245px) {
+        left: calc(0px + (733 - 0) * ((100vw - 320px) / (1245 - 320)))
+    }
+    &__device {
+        padding-bottom: 20px;
+        @media (max-width: 1245px) {
+            padding-bottom: calc(5px + (20 - 5) * ((100vw - 320px) / (1245 - 320)));
+        }
+        &_iphone {
+            width: 112px;
+            height: 227px;
+            margin-right: 55px;
+            @media (max-width: 1245px) {
+                width: calc(55px + (112 - 55) * ((100vw - 320px) / (1245 - 320)));
+                height: calc(123px + (227 - 123) * ((100vw - 320px) / (1245 - 320)));
+                margin-right: calc(20px + (55 - 20) * ((100vw - 320px) / (1245 - 320)));
+            }
+        }
+        &_ipad {
+            width: 242px;
+            height: 344px;
+            margin-right: 23px;
+            @media (max-width: 1245px) {
+                width: calc(120px + (242 - 120) * ((100vw - 320px) / (1245 - 320)));
+                height: calc(150px + (344 - 150) * ((100vw - 320px) / (1245 - 320)));
+                margin-right: calc(10px + (23 - 10) * ((100vw - 320px) / (1245 - 320)));
+            }
+        }
+        &_macbook {
+            width: 750px;
+            height: 436px;
+            @media (max-width: 1245px) {
+                width: calc(325px + (750 - 325) * ((100vw - 320px) / (1245 - 320)));
+                height: calc(215px + (436 - 215) * ((100vw - 320px) / (1245 - 320)));
+            }
+        }
+    }
+}

@@ -11,38 +11,26 @@
     overflow: hidden;
     position: absolute;
     top: -46px;
-    left: -170px;
+    left: -200px;
     width: 666px;
     height: 527px;
     background: #f6ae48;
-    @media(max-width: 1170px) {
-        top: -20px;
-        left: -122px;
-    }
-    @media(max-width: 740px) {
-        width: 589px;
-        height: 390px;
-    }
-    @media(max-width: 485px) {
-        width: 589px;
-        height: 390px;
-    }
-    @media(max-width: 490px) {
-        width: 540px;
-        height: 372px;
-        left: -98px;
-    }
-    @media(max-width: 360px) {
-        left: -111px;
+    @media (max-width: 1245px) {
+        width: calc(340px + (666 - 340) * ((100vw - 320px) / (1245 - 320)));
+        height: calc(220px + (527 - 220) * ((100vw - 320px) / (1245 - 320)));
+        left: calc(-44px + (-200 - -44) * ((100vw - 320px) / (1245 - 320)));
+        top: calc(-20px + (-46 - -20) * ((100vw - 320px) / (1245 - 320)));
     }
     &__name {
         font-size: 50px;
         padding-top: 85px;
         padding-left: 80px;
         letter-spacing: 5px;
-        @media(max-width: 430px) {
-            font-size: 35px;
-            padding-left: inherit;
+        @media (max-width: 1245px) {
+            font-size: calc(30px + (50 - 30) * ((100vw - 320px) / (1245 - 320)));
+        }
+        @media (max-width: 1245px) {
+            padding-left: calc(0px + (80 - 0) * ((100vw - 320px) / (1245 - 320)));
         }
     }
     &__img {

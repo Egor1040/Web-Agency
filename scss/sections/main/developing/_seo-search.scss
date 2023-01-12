@@ -24,7 +24,6 @@
     margin-right: 30px;
     @include flex($jc: space-evenly, $ai: flex-start, $fd: column);
     &__title {
-        font-family: 'Parangon 530C';
         font-weight: bold;
         font-size: 36px;
         z-index: 10;
@@ -51,6 +50,7 @@
         color: #cfcfcf;
         white-space: nowrap;
         z-index: -1;
+        line-height: 1;
         @media(max-width: 830px) {
             font-size: 70px;
         }

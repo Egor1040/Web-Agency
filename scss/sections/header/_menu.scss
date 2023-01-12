@@ -28,15 +28,6 @@
         @include flex($jc:flex-end, $ai:center, $fd:row);
         max-height: 100px;
         padding: 30px 0;
-        @include for-laptop {
-            font-size: 20px;
-        }
-        @include for-tablet {
-            font-size: 16px;
-        }
-        @media (max-width: 935px) {
-            @include flex($jc:flex-start, $ai:center, $fd:row)
-        }
     }
     &__item {
         white-space: nowrap;
@@ -48,16 +39,6 @@
             &:hover {
                 color: #303263;
             }
-            @media (max-width: 930px) {
-                margin-right: 20px;
-                margin-left: 20px;
-            }
-            @media (max-width: 400px) {
-                margin-right: 5px;
-                margin-left: 5px;
-                font-size: 18px;
-                font-weight: bold;
-            }
         }
         &:last-child {
             margin-right: 0px;
@@ -65,9 +46,6 @@
         &_passive {
             &:hover {
                 color: #303263;
-            }
-            @media (max-width: $bp-menuOff) {
-                display: none;
             }
         }
         &-button {
@@ -95,14 +73,6 @@
 
             &::after {
                 transform: translateY(8px);
-            }
-            @media (min-width: 930px) {
-                display: none;
-            }
-            & img {
-                @media (max-width: 650px) {
-                    width: 21px;
-                }
             }
             &:hover {
                 background: #30326396;
