@@ -1,10 +1,12 @@
+.adaptives {
+    overflow: hidden;
+}
+
 .adaptives-block {
     height: 765px;
     padding: 0 20px;
     @include flex ($jc: space-between, $ai: center, $fd: row);
     @media (max-width: 1270px) {
-        justify-content: center;
-        flex-wrap: wrap;
         height: calc(410px + (765 - 410) * ((100vw - 320px) / (1245 - 320)));
     }
 }

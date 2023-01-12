@@ -1429,6 +1429,10 @@ li {
   background: rgba(106, 107, 142, 0.5215686275);
 }
 
+.adaptives {
+  overflow: hidden;
+}
+
 .adaptives-block {
   height: 765px;
   padding: 0 20px;
@@ -1448,11 +1452,6 @@ li {
 }
 @media (max-width: 1270px) {
   .adaptives-block {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     height: calc(410px + 355 * (100vw - 320px) / 925);
   }
 }
@@ -1592,7 +1591,6 @@ li {
 }
 
 .tradein {
-  max-height: 680px;
   background-image: linear-gradient(129deg, rgba(48, 50, 99, 0.6730042359) 35%, rgb(48, 50, 99) 100%), url(../img/tradeinbackground.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1617,9 +1615,15 @@ li {
   padding: 55px 0;
   max-height: 190px;
   font-size: 48px;
-  font-family: "Parangon 530C";
   line-height: 72px;
   color: #ffffff;
+}
+@media (max-width: 1245px) {
+  .tradein-block__title {
+    font-size: calc(24px + 24 * (100vw - 320px) / 925);
+    padding-top: calc(20px + 35 * (100vw - 320px) / 925);
+    padding-bottom: calc(20px + 35 * (100vw - 320px) / 925);
+  }
 }
 
 .our-service {
@@ -1639,13 +1643,41 @@ li {
   -webkit-column-gap: 30px;
      -moz-column-gap: 30px;
           column-gap: 30px;
+  margin: 0 20px;
+}
+@media (max-width: 1245px) {
+  .our-service {
+    margin-top: calc(10px + 10 * (100vw - 320px) / 925);
+  }
+}
+@media (max-width: 1000px) {
+  .our-service {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
+@media (max-width: 1000px) {
+  .service-sequence {
+    margin-bottom: 10px;
+  }
+  .service-sequence:last-child {
+    margin-bottom: 0;
+  }
+}
 .service-sequence__descr {
   color: #ffffff;
   font-size: 18px;
   letter-spacing: 0;
   line-height: 30px;
+}
+@media (max-width: 1245px) {
+  .service-sequence__descr {
+    font-size: calc(16px + 2 * (100vw - 320px) / 925);
+    line-height: calc(20px + 10 * (100vw - 320px) / 925);
+  }
 }
 
 .sequence {
@@ -1656,20 +1688,23 @@ li {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 20px;
-  max-width: 415px;
 }
 .sequence__img {
   width: 70px;
   height: 50px;
 }
 .sequence__title {
-  font-family: "Parangon 530C";
   overflow: hidden;
   padding-left: 20px;
   white-space: nowrap;
   color: #ffffff;
   font-size: 30px;
   line-height: 50px;
+}
+@media (max-width: 1245px) {
+  .sequence__title {
+    font-size: calc(20px + 10 * (100vw - 320px) / 925);
+  }
 }
 
 .button-rating {
@@ -1682,8 +1717,12 @@ li {
   border-radius: 10px;
   background: #f6ae48;
 }
+@media (max-width: 1245px) {
+  .button-rating {
+    width: calc(250px + 80 * (100vw - 320px) / 925);
+  }
+}
 .button-rating__descr {
-  font-family: "Parangon 530C";
   color: #ffffff;
   font-size: 24px;
 }

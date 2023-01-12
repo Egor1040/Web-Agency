@@ -1,5 +1,4 @@
 .tradein {
-    max-height: 680px;
     background-image: linear-gradient(129deg, rgba(48,50,99,0.6730042358740371) 35%, rgba(48,50,99,1) 100%),
     url(../img/tradeinbackground.png);
     background-repeat: no-repeat;
@@ -11,9 +10,13 @@
             padding: 55px 0;
             max-height: 190px;
             font-size: 48px;
-            font-family: 'Parangon 530C';
             line-height: 72px;
             color: #ffffff;
+            @media (max-width: 1245px) {
+                font-size: calc(24px + (48 - 24) * ((100vw - 320px) / (1245 - 320)));
+                padding-top: calc(20px + (55 - 20) * ((100vw - 320px) / (1245 - 320)));
+                padding-bottom: calc(20px + (55 - 20) * ((100vw - 320px) / (1245 - 320)));
+            }
         }
     }
 }
@@ -21,14 +24,31 @@
 .our-service {
     @include flex($jc: center, $ai: flex-start, $fd: row);
     column-gap: 30px;
+    margin: 0 20px;
+    @media (max-width: 1245px) {
+        margin-top: calc(10px + (20 - 10) * ((100vw - 320px) / (1245 - 320)));;
+    }
+    @media (max-width: 1000px) {
+        flex-direction: column;
+    }
 }
 
 .service-sequence {
+    @media (max-width: 1000px) {
+        margin-bottom: 10px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
     &__descr {
         color: #ffffff;
         font-size: 18px;
         letter-spacing: 0;
         line-height: 30px;
+        @media (max-width: 1245px) {
+            font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1245 - 320)));
+            line-height: calc(20px + (30 - 20) * ((100vw - 320px) / (1245 - 320)));
+        }
     }
 }
 
@@ -36,19 +56,20 @@
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    max-width: 415px;
     &__img {
         width: 70px;
         height: 50px;
     }
     &__title {
-        font-family: 'Parangon 530C';
         overflow: hidden;
         padding-left: 20px;
         white-space: nowrap;
         color: #ffffff;
         font-size: 30px;
         line-height: 50px;
+        @media (max-width: 1245px) {
+            font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1245 - 320)));
+        }
     }
 }
 
@@ -61,8 +82,10 @@
     height: 67px;
     border-radius: 10px;
     background: #f6ae48;
+    @media (max-width: 1245px) {
+        width: calc(250px + (330 - 250) * ((100vw - 320px) / (1245 - 320)));
+    }
     &__descr {
-        font-family: 'Parangon 530C';
         color: #ffffff;
         font-size: 24px;
     }
