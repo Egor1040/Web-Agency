@@ -1,49 +1,77 @@
 .careful {
-    height: 760px;
+    overflow: hidden;
 }
 
 .careful-block {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 760px;
+    @media (max-width: 1200px) {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+        height: calc(453px + (760 - 453) * ((100vw - 320px) / (1245 - 320)));
+        align-content: center;
+    }
 }
 
 .care {
     max-width: 594px;
-    margin-top: 163px;
     @include flex($jc: space-around, $ai: flex-start, $fd: column);
-    &__title {
+    &__descr {
+        margin-top: 31px;
+        font-size: 24px;
+        line-height: 48px;
+        letter-spacing: 0;
+        @media (max-width: 1245px) {
+            font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1245 - 320)));
+            line-height: calc(16px + (48 - 16) * ((100vw - 320px) / (1245 - 320)));
+            margin-top: 20px;
+        }
+    }
+}
+
+.care-title {
+    &__heading {
         @include flex($jc: center, $ai: center, $fd: row);
         color: #000000;
         position: relative;
         z-index: 10;
         font-size: 36px;
-        font-family: 'Parangon 530C';
+        font-weight: bold;
         white-space: nowrap;
+        @media (max-width: 1245px) {
+            font-size: calc(20px + (36 - 20) * ((100vw - 320px) / (1245 - 320)));
+        }
     }
     &__under-text {
-        font-size: 72px;
+        font-size: 78px;
         color: #cfcfcf;
         position: absolute;
-        top: -22px;
         letter-spacing: 7px;
-        font-family: "PT Sans Caption", sans-serif;
         font-weight: bold;
         white-space: nowrap;
         line-height: 1;
         z-index: -1;
-    }
-    &__descr {
-        margin-top: 31px;
-        font-size: 24px;
-        line-height: 42px;
-        letter-spacing: 0;
+        @media (max-width: 1245px) {
+            font-size: calc(35px + (78 - 35) * ((100vw - 320px) / (1245 - 320)));
+        }
     }
 }
-
-.support {
+.support-examp {
+    display: flex;
+    align-items: flex-end;
+    @media (max-width: 1245px) {
+        left: calc(0px + (645 - 0) * ((100vw - 320px) / (1245 - 320)));
+    }
     &__img {
-        margin-top: 100px;
         width: 560px;
         height: 460px;
+        @media (max-width: 1245px) {
+            width: calc(320px + (560 - 320) * ((100vw - 320px) / (1245 - 320)));
+            height: calc(240px + (460 - 240) * ((100vw - 320px) / (1245 - 320)));
+        }
     }
 }

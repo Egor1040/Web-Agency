@@ -110,7 +110,7 @@
                 color: white;
             }
             @media (max-width: 370px) {
-                height: auto;
+                
             }
         }
         &__bottom {
@@ -130,7 +130,7 @@
 
 .button-block {
     display: none;
-    margin-top: 20px;
+    margin-top: 5px;
     &__price {
         @include flex;
         width: 132px;
@@ -140,6 +140,9 @@
             font-size: 18px;
             letter-spacing: 0;
         }
+    }
+    @media (max-width: 400px) {
+        margin-top: 0;
     }
 }
 

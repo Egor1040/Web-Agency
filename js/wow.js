@@ -1,4 +1,4 @@
-var wow = new WOW(
+var wow = new wow (
   {
     boxClass:     'wow',      // animated element css class (default is wow)
     animateClass: 'animated', // animation css class (default is animated)

@@ -7,6 +7,15 @@
     &-section {
         @include flex($jc: space-between, $ai: center, $fd: row);
         height: 567px;
+        padding: 0 20px;
+        @media (max-width: 1050px) {
+            flex-direction: column;
+            padding: 20px 0;
+            height: auto;
+        }
+        @media (max-width: 680px) {
+
+        }
     }
 }
 
@@ -14,12 +23,17 @@
     width: 360px;
     height: 325px;
     color: #ffffff;
+    @media (max-width: 680px) {
+        width: calc(280px + (360 - 280) * ((100vw - 320px) / (1245 - 320)));
+    }
     &__title {
         white-space: nowrap;
-        font-family: 'Parangon 530C';
         font-size: 30px;
         line-height: 1;
         padding-bottom: 50px;
+        @media (max-width: 680px) {
+            font-size: 25px;
+        }
     }
     &__text {
         font-size: 18px;
@@ -30,14 +44,25 @@
 
 .reverse-forms {
     color: #ffffff;
-    padding-right: 20px;
 }
 
-.main-forms {
+.enter-info {
+    @media (max-width: 680px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+}
+
+.forms-main {
     border: 5px solid #ffffff;
     width: 615px;
     height: 267px;
-    font-size: 18px
+    font-size: 18px;
+    @media (max-width: 680px) {
+        width: calc(280px + (615 - 320) * ((100vw - 320px) / (1245 - 320)));
+        font-size: 13px;
+    }
 }
 .header-form {
     @include flex;
@@ -109,6 +134,11 @@
 .footer-form {
     @include flex($jc: space-between, $ai: flex-start, $fd: row);
     height: 58px;
+    @media (max-width: 680px) {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
     &__text {
         letter-spacing: 0;
         font-size: 14px;
@@ -117,6 +147,10 @@
         padding-top: 14px;
         padding-left: 24px;
         line-height: 1;
+        @media (max-width: 680px) {
+            padding-left: 0;
+            padding: 5px 80px;
+        }
     }
     &__button {
         border-radius: 10px;
