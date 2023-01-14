@@ -43,8 +43,8 @@
     }
 
     &__descr {
-        @media (max-width: $bp-phone) {
-            font-size: .65rem;
+        @media (max-width: 1245px) {
+            font-size: calc(.55rem + (.75 - .55) * ((100vw - 320px) / (1245 - 320)));
         }
     }
 }

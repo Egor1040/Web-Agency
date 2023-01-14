@@ -49,9 +49,8 @@ $achivIconWidth: 28px;
     }
 
     &__descr {
-        max-width: 218px;
-        max-height: 21px;
-        overflow: hidden;
+        max-width: 235px;
+        white-space: nowrap;
         text-align: center;
         font-size: .75rem;
     }

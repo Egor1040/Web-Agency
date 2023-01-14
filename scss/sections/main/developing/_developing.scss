@@ -4,7 +4,10 @@
 
 .developing-block {
     position: relative;
-    height: 1300px;
+    padding-bottom: 135px;
+    @media(max-width: 1245px) {
+        padding-bottom: calc(20px + (135 - 20) * ((100vw - 320px) / (1245 - 320)));
+    }
 }
 
 .frame {
@@ -30,7 +33,7 @@
             font-size: calc(30px + (50 - 30) * ((100vw - 320px) / (1245 - 320)));
         }
         @media (max-width: 1245px) {
-            padding-left: calc(0px + (80 - 0) * ((100vw - 320px) / (1245 - 320)));
+            padding-left: calc(15px + (80 - 15) * ((100vw - 320px) / (1245 - 320)));
         }
     }
     &__img {

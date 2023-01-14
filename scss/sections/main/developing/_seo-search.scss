@@ -2,14 +2,10 @@
     display: flex;
     justify-content: space-between;
     max-width: 955px;
-    height: 465px;
     margin-top: 176px;
     margin-left: 20px;
     @media(max-width: 900px) {
         margin-top: 90px;
-    }
-    @media(max-width: 760px) {
-        height: 300px;
     }
     @media(max-width: 460px) {
         flex-direction: column;
@@ -21,8 +17,10 @@
 
 .seo-text {
     max-width: 568px;
-    margin-right: 30px;
     @include flex($jc: space-evenly, $ai: flex-start, $fd: column);
+    @media(max-width: 770px) {
+        justify-content: center;
+    }
     &__title {
         font-weight: bold;
         font-size: 36px;
@@ -31,9 +29,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        @media(max-width: 1000px) {
-            justify-content: flex-start;
-        }
         @media(max-width: 770px) {
             font-size: 26px;
         }
@@ -43,7 +38,6 @@
         }
     }
     &__back-title {
-        font-family: "PT Sans Caption", sans-serif;
         position: absolute;
         font-size: 80px;
         font-weight: bold;
@@ -67,13 +61,11 @@
         @media(max-width: 770px) {
             line-height: 25px;
             font-size: 20px;
+            margin-top: 20px;
         }
         @media(max-width: 600px) {
             line-height: 20px;
             font-size: 16px;
-        }
-        @media(max-width: 460px) {
-            margin-top: 10px;
         }
         @media(max-width: 370px) {
             line-height: 16px;
@@ -89,12 +81,14 @@
     & img {
         @media(max-width: 770px) {
            width: 100px;
-           height: 100px;
         }
+    }
+    @media(max-width: 770px) {
+        justify-content: space-around;
     }
     @media(max-width: 460px) {
         flex-direction: row;
         justify-content: space-evenly;
-        margin-top: 10px;
+        margin-top: 20px;
     }
 }

@@ -2,12 +2,18 @@
     background: white;
 }
 .specializations {
-    padding: 0 20px;
+    padding-top: 185px;
+    padding-bottom: 185px;
+    padding-left: 20px;
+    padding-right: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 525px;
     position: relative;
+    @media (max-width: 1245px) {
+        padding-top: calc(30px + (185 - 30) * ((100vw - 320px) / (1245 - 320)));
+        padding-bottom: calc(30px + (185 - 30) * ((100vw - 320px) / (1245 - 320)));
+    }
     @media (max-width: 1000px) {
         @include flex($jc: center, $ai: flex-start, $fd: column)
     }
@@ -15,9 +21,11 @@
         color: #000000;
         font-size: 48px;
         font-weight: bold;
+        @media (max-width: 1000px) {
+            margin-bottom: 20px;
+        }
         @media (max-width: $st-tablet) {
             font-size: 24px;
-            padding-bottom: 20px;
         }
     }
     &__text {
@@ -51,31 +59,32 @@
 }
 
 .special {
+    padding-bottom: 240px;
+    position: relative;
     background: white;
     display: flex;
     justify-content: center;
-    height: 585px;
-    @media (max-width: $st-laptop) {
+    @media (max-width: 1245px) {
+        padding-bottom: calc(30px + (240 - 30) * ((100vw - 320px) / (1245 - 320)));
+    }
+        @media (max-width: $st-laptop) {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
         height: auto;
     }
-    &__service {
+    &-service {
         cursor: pointer;
         overflow: hidden;
         padding: 20px;
         width: 400px;
-        height: 345px;
+        height: 380px;
+        @media (max-width: 1245px) {
+            height: calc(350px + (380 - 350) * ((100vw - 320px) / (1245 - 320)));;
+        }
         &:hover {
             background: #f6ae48;
             color: white;
-        }
-        &:first-child {
-            @media (max-width: $st-laptop) {
-                padding: 20px;
             }
-        }
         &__img {
             height: 45px;
             margin-bottom: 10px;
@@ -104,33 +113,25 @@
         &_community {
             color: #000000;
             width: 400px;
-            height: 345px;
+            height: 380px;
+            @media (max-width: 1245px) {
+                height: calc(350px + (380 - 350) * ((100vw - 320px) / (1245 - 320)));;
+            }
             &:hover {
                 background: #f6ae48;
                 color: white;
             }
-            @media (max-width: 370px) {
-                
-            }
-        }
-        &__bottom {
-            margin-top: 20px;
-            @include flex;
-            width: 132px;
-            height: 37px;
-            border: 2px solid white;
-            & p {
-                font-size: 18px;
-                letter-spacing: 0;
-            }
         }
     }
-    
 }
+
 
 .button-block {
     display: none;
-    margin-top: 5px;
+    margin-top: 15px;
+    @media (max-width: 1245px) {
+        margin-top: calc(5px + (15 - 5) * ((100vw - 320px) / (1245 - 320)));;
+    }
     &__price {
         @include flex;
         width: 132px;
@@ -141,12 +142,9 @@
             letter-spacing: 0;
         }
     }
-    @media (max-width: 400px) {
-        margin-top: 0;
-    }
 }
 
-.special__service:hover .button-block{
+.special-service:hover .button-block{
     @include flex($jc: space-between,$ai: center,$fd: row);
     display: flex;
 }

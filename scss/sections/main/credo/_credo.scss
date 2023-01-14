@@ -5,10 +5,11 @@
     background-size: cover;
     &-block {
         @include flex($jc: center, $ai: center, $fd: column);
-        height: 566px;
-        @media (max-width: $bp-phone) {
-            height: auto;
-            padding: 20px 0;
+        padding-top: 140px;
+        padding-bottom: 140px;
+        @media (max-width: 1245px) {
+            padding-top: calc(30px + (140 - 30) * ((100vw - 320px) / (1245 - 320)));
+            padding-bottom: calc(30px + (140 - 30) * ((100vw - 320px) / (1245 - 320)));
         }
         &__title {
             font-size: 50px;
