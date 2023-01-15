@@ -1375,7 +1375,7 @@ li {
   width: 25%;
 }
 .projects-block__img:hover {
-  scale: 120%;
+  scale: 110%;
 }
 .projects-block__img:nth-child(1), .projects-block__img:nth-child(2) {
   width: 50%;
