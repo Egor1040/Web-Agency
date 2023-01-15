@@ -84,15 +84,18 @@
         &:hover {
             background: #f6ae48;
             color: white;
+            & .special-service__img {
+                fill: white;
+            }
             }
         &__img {
+            fill: #00b9e7;
+            width: 35px;
             height: 45px;
             margin-bottom: 10px;
             &_last {
-                fill: #00b9e7;
                 font-weight: bold;
-                height: 45px;
-                width: 30px;
+                width: 45px;
             }
         }
         &__title {

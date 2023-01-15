@@ -61,7 +61,10 @@
     display: flex;
     align-items: flex-end;
     @media (max-width: 1245px) {
-        left: calc(0px + (733 - 0) * ((100vw - 320px) / (1245 - 320)))
+        left: calc(0px + (733 - 0) * ((100vw - 320px) / (1245 - 320)));
+    }
+    @media(max-width: 1020px) {
+        opacity: .6;
     }
     &__device {
         padding-bottom: 20px;
