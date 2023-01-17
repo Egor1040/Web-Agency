@@ -21,6 +21,7 @@
 .hero-content {
     @include flex(center, center, column);
     &__title {
+        color: $ColorTitleHero;
         max-height: 150px;
         overflow: hidden;
         padding: 0 20px;
@@ -37,7 +38,7 @@
         max-width: 835px;
         text-align: center;
         margin-bottom: 55px;
-        color: white;
+        color: $ColorDescrHero;
         line-height: 36px;
         @include for-tablet {
             margin-bottom: 20px;

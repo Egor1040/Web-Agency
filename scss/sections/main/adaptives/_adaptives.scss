@@ -3,44 +3,48 @@
 }
 
 .adaptives-block {
-    height: 765px;
-    padding: 0 20px;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    padding-left: 20px;
+    padding-right: 20px;
     @include flex ($jc: space-between, $ai: center, $fd: row);
     @media (max-width: 1270px) {
-        height: calc(410px + (765 - 410) * ((100vw - 320px) / (1245 - 320)));
+        padding-top: calc(30px + (140 - 30) * ((100vw - 320px) / (1245 - 320)));
+        padding-bottom: calc(30px + (140 - 30) * ((100vw - 320px) / (1245 - 320)));
     }
 }
 
 .adaptate-info {
     position: relative;
     max-width: 540px;
-    height: 396px;
     @include flex($jc: center, $ai: flex-start, $fd: column);
     &__descr {
+        color: $TitleandTextColorHeading;
+        margin-top: 30px;
         font-size: 24px;
         line-height: 48px;
         letter-spacing: 0;
         @media (max-width: 1245px) {
             font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1245 - 320)));
             line-height: calc(16px + (48 - 16) * ((100vw - 320px) / (1245 - 320)));
+            margin-top: 20px;
         }
     }
 }
 
 .adaptate-heading {
     &__title {
+        color: $TitleandTextColorHeading;
         @include flex($jc: flex-start, $ai: center, $fd: row);
         font-size: 36px;
         font-weight: bold;
-        line-height: 72px;
         position: relative;
         @media (max-width: 1245px) {
             font-size: calc(20px + (36 - 20) * ((100vw - 320px) / (1245 - 320)));
         }
     }
     &__under-text {
-        font-family: "PT Sans Caption", sans-serif;
-        color: #cfcfcf;
+        color: $ColorBackTitleWords;
         max-width: 438px;
         font-size: 78px;
         font-weight: bold;

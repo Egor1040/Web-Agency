@@ -1,5 +1,5 @@
 .studios {
-    background: white;
+    background: $BackgroundStudiosBlock;
 }
 .specializations {
     padding-top: 185px;
@@ -18,7 +18,7 @@
         @include flex($jc: center, $ai: flex-start, $fd: column)
     }
     &__title {
-        color: #000000;
+        color: $TitleColorStudios;
         font-size: 48px;
         font-weight: bold;
         @media (max-width: 1000px) {
@@ -29,6 +29,7 @@
         }
     }
     &__text {
+        color: $TextColorStudios;
         max-width: 765px;
         font-size: 20px;
         @media (max-width: 1000px) {
@@ -73,6 +74,7 @@
         height: auto;
     }
     &-service {
+        color: $SpecialColorTitleText;
         cursor: pointer;
         overflow: hidden;
         padding: 20px;
@@ -114,7 +116,6 @@
             }
         }
         &_community {
-            color: #000000;
             width: 400px;
             height: 380px;
             @media (max-width: 1245px) {

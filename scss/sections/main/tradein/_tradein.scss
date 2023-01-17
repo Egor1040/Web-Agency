@@ -7,15 +7,15 @@
     &-block {
         @include flex($jc: center, $ai: center, $fd: column);
         &__title {
-            padding: 55px 0;
+            padding: 45px 0;
             max-height: 190px;
             font-size: 48px;
             line-height: 72px;
-            color: #ffffff;
+            color: $TitleColorTradeIn;
             @media (max-width: 1245px) {
                 font-size: calc(24px + (48 - 24) * ((100vw - 320px) / (1245 - 320)));
-                padding-top: calc(20px + (55 - 20) * ((100vw - 320px) / (1245 - 320)));
-                padding-bottom: calc(20px + (55 - 20) * ((100vw - 320px) / (1245 - 320)));
+                padding-top: calc(20px + (45 - 20) * ((100vw - 320px) / (1245 - 320)));
+                padding-bottom: calc(20px + (45 - 20) * ((100vw - 320px) / (1245 - 320)));
             }
         }
     }
@@ -41,7 +41,7 @@
         }
     }
     &__descr {
-        color: #ffffff;
+        color: $TitleandDescrColorSequance;
         font-size: 18px;
         letter-spacing: 0;
         line-height: 30px;
@@ -64,7 +64,7 @@
         overflow: hidden;
         padding-left: 20px;
         white-space: nowrap;
-        color: #ffffff;
+        color: $TitleandDescrColorSequance;
         font-size: 30px;
         line-height: 50px;
         @media (max-width: 1245px) {
@@ -81,7 +81,7 @@
     width: 330px;
     height: 67px;
     border-radius: 10px;
-    background: #f6ae48;
+    background: $RatingButtonBackground;
     @media (max-width: 1245px) {
         width: calc(250px + (330 - 250) * ((100vw - 320px) / (1245 - 320)));
     }

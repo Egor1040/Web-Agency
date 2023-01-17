@@ -6,18 +6,18 @@
 
 .last-projects {
     height: 120px;
-    background: #303263;
+    background: $BackgroundLastProject;
     @include flex;
     @media (max-width: 1245px) {
         height: calc(60px + (120 - 60) * ((100vw - 320px) / (1245 - 320)));;
     }
-    &__text {
+    &__title {
         @include flex;
         white-space: nowrap;
         position: relative;
         font-size: 36px;
         font-weight: bold;
-        color: #ffffff;
+        color: $ColorTitleProjects;
         z-index: 3;
         @media (max-width: 1245px) {
             font-size: calc(20px + (36 - 20) * ((100vw - 320px) / (1245 - 320)));
@@ -27,7 +27,7 @@
         line-height: 1;
         font-size: 96px;
         font-weight: bold;
-        color: #c1c1c17f;
+        color: $ColorUnderTitle;
         position: absolute;
         z-index: -1;
         letter-spacing: 15px;
@@ -44,7 +44,7 @@
     display: flex;
     flex-wrap: wrap;
     &__img {
-        border: 2px solid gray;
+        border: 2px solid $BorderColorInProjects;
         &:hover {
             scale: 110%;
         }
@@ -75,7 +75,7 @@
         font-weight: bold;
         cursor: pointer;
         @include flex;
-        background: #6a6b8e;
+        background: $ButtonBackgroundMoreLastProj;
         color: #ffffff;
         white-space: nowrap;
         width: 240px;

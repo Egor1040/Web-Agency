@@ -12,6 +12,7 @@
             padding-bottom: calc(30px + (140 - 30) * ((100vw - 320px) / (1245 - 320)));
         }
         &__title {
+            color: $ColorTitleCredo;
             font-size: 50px;
             font-weight: bold;
             padding: 0 20px;
@@ -28,7 +29,7 @@
         &__descr {
             overflow: hidden;
             padding: 0 20px;
-            color: $CredoColordescr;
+            color: $ColorDescrCredo;
             font-size: 24px;
             max-width: 1166px;
             text-align: center;

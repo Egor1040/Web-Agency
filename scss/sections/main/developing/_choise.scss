@@ -53,11 +53,11 @@
             justify-content: space-between;
             flex-direction: column;
             max-width: 262px;
-            color: #ffffff;
+            color: $ColorTitleChoise;
             font-size: 50px;
             line-height: 48.2px;
             & span {
-                border-bottom: 2px solid #ffffff;
+                border-bottom: 2px solid $ColorBorderBottomTitleChoise;
             }
             @media(max-width: 1170px) {
                 letter-spacing: 0;
@@ -74,14 +74,14 @@
 
 .button-choise {
     padding-top: 45px;
-    width: 280px;
+    width: 260px;
     font-size: 24px;
     @include flex($jc: space-between, $ai: center, $fd: row);
     @media(max-width: 1170px) {
         padding-top: 0;
     }
     @media(max-width: 360px) {
-        width: 260px;
+        width: 250px;
         padding-top: 0;
     }
     &__price {
@@ -89,21 +89,21 @@
             width: 200px;
             height: 56px;
             border: 2px solid #00b9e7;
-            color: #ffffff;
+            color: $ColorPriceChoise;
             @include flex;
         }
         &_yellow {
             width: 200px;
             height: 56px;
             border: 2px solid #ffcb00;
-            color: #ffffff;
+            color: $ColorPriceChoise;
             @include flex;
         }
         &_green {
             width: 200px;
             height: 56px;
             border: 2px solid #66bf0d;
-            color: #ffffff;
+            color: $ColorPriceChoise;
             @include flex;
         }
         @media(max-width: 1170px) {

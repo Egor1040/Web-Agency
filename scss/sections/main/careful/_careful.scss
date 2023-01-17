@@ -6,13 +6,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
-    height: 760px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    @media (max-width: 1245px) {
+        padding-top: calc(30px + (140 - 30) * ((100vw - 320px) / (1245 - 320)));
+        padding-bottom: calc(30px + (140 - 30) * ((100vw - 320px) / (1245 - 320)));
+    }
     @media (max-width: 1200px) {
         flex-wrap: wrap;
         justify-content: center;
-        margin-top: 20px;
-        height: calc(453px + (760 - 453) * ((100vw - 320px) / (1245 - 320)));
         align-content: center;
     }
 }
@@ -21,7 +25,8 @@
     max-width: 594px;
     @include flex($jc: space-around, $ai: flex-start, $fd: column);
     &__descr {
-        margin-top: 31px;
+        color: $TitleandDescrColorCare;
+        margin-top: 30px;
         font-size: 24px;
         line-height: 48px;
         letter-spacing: 0;
@@ -36,7 +41,7 @@
 .care-title {
     &__heading {
         @include flex($jc: center, $ai: center, $fd: row);
-        color: #000000;
+        color: $TitleandDescrColorCare;
         position: relative;
         z-index: 10;
         font-size: 36px;
@@ -48,7 +53,7 @@
     }
     &__under-text {
         font-size: 78px;
-        color: #cfcfcf;
+        color: $ColorBackTitleWords;
         position: absolute;
         letter-spacing: 7px;
         font-weight: bold;

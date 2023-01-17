@@ -22,6 +22,7 @@
         justify-content: center;
     }
     &__title {
+        color: $ColorTitleTextSeoSearch;
         font-weight: bold;
         font-size: 36px;
         z-index: 10;
@@ -41,7 +42,7 @@
         position: absolute;
         font-size: 80px;
         font-weight: bold;
-        color: #cfcfcf;
+        color: $ColorBackTitleWords;
         white-space: nowrap;
         z-index: -1;
         line-height: 1;
@@ -56,8 +57,13 @@
         }
     }
     &__text {
+        color: $ColorTitleTextSeoSearch;
+        margin-top: 30px;
         font-size: 24px;
         line-height: 48px;
+        @media(max-width: 1245px) {
+            margin-top: 20px;
+        }
         @media(max-width: 770px) {
             line-height: 25px;
             font-size: 20px;
@@ -79,6 +85,8 @@
     flex-direction: column;
     margin-right: 20px;
     & img {
+        max-height: 200px;
+        max-width: 205px;
         @media(max-width: 770px) {
            width: 100px;
         }
