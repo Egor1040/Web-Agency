@@ -19,6 +19,8 @@
     max-width: 540px;
     @include flex($jc: center, $ai: flex-start, $fd: column);
     &__descr {
+        overflow: hidden;
+        max-height: 660px;
         color: $TitleandTextColorHeading;
         margin-top: 30px;
         font-size: 24px;

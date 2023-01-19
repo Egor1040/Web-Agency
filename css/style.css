@@ -471,6 +471,7 @@ li {
   width: 28px;
 }
 .achivments__value {
+  overflow: hidden;
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 5px;
@@ -481,6 +482,7 @@ li {
   }
 }
 .achivments__descr {
+  overflow: hidden;
   max-width: 235px;
   white-space: nowrap;
   text-align: center;
@@ -536,6 +538,7 @@ li {
   }
 }
 .specializations__title {
+  max-height: 350px;
   color: #000000;
   font-size: 48px;
   font-weight: bold;
@@ -596,9 +599,6 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 @media (max-width: 1245px) {
   .special {
@@ -625,7 +625,7 @@ li {
 }
 @media (max-width: 1245px) {
   .special-service {
-    height: calc(350px + 30 * (100vw - 320px) / 925);
+    height: calc(360px + 20 * (100vw - 320px) / 925);
   }
 }
 .special-service:hover {
@@ -758,6 +758,7 @@ li {
   }
 }
 .credo-block__title {
+  max-height: 140px;
   color: #ffffff;
   font-size: 50px;
   font-weight: bold;
@@ -777,6 +778,7 @@ li {
   }
 }
 .credo-block__descr {
+  max-height: 440px;
   overflow: hidden;
   padding: 0 20px;
   color: #ffffff;
@@ -884,6 +886,10 @@ li {
 }
 
 .choise {
+  cursor: pointer;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -908,22 +914,10 @@ li {
   }
 }
 .choise-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-right: 20px;
-  width: 363px;
-  height: 315px;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 .choise-item:nth-child(1) {
   background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(14, 15, 18, 0.5764705882))), url(../img/choise1.png);
@@ -941,7 +935,6 @@ li {
 .choise-item:nth-child(3) {
   background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(14, 15, 18, 0.5764705882))), url(../img/choise3.png);
   background-image: linear-gradient(to right top, rgba(14, 15, 18, 0.5764705882)), url(../img/choise3.png);
-  margin-right: 0;
 }
 @media (max-width: 1027px) {
   .choise-item:nth-child(3) {
@@ -1007,7 +1000,6 @@ li {
 
 .button-choise {
   padding-top: 45px;
-  width: 260px;
   font-size: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1034,10 +1026,14 @@ li {
     padding-top: 0;
   }
 }
+.button-choise__img {
+  max-width: 35px;
+  max-height: 35px;
+}
 .button-choise__price_blue {
   width: 200px;
   height: 56px;
-  border: 2px solid #00b9e7;
+  border: 2px solid #ffffff;
   color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1056,7 +1052,7 @@ li {
 .button-choise__price_yellow {
   width: 200px;
   height: 56px;
-  border: 2px solid #ffcb00;
+  border: 2px solid #ffffff;
   color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1075,7 +1071,7 @@ li {
 .button-choise__price_green {
   width: 200px;
   height: 56px;
-  border: 2px solid #66bf0d;
+  border: 2px solid #ffffff;
   color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1096,6 +1092,18 @@ li {
     width: 200px;
     height: 50px;
   }
+}
+
+.choise-item:hover .button-choise__price_blue {
+  border: 3px solid #00b9e7;
+}
+
+.choise-item:hover .button-choise__price_yellow {
+  border: 3px solid #ffcb00;
+}
+
+.choise-item:hover .button-choise__price_green {
+  border: 3px solid #66bf0d;
 }
 
 .seo-search {
@@ -1203,6 +1211,8 @@ li {
   }
 }
 .seo-text__text {
+  overflow: hidden;
+  max-height: 510px;
   color: #000000;
   margin-top: 30px;
   font-size: 24px;
@@ -1359,13 +1369,13 @@ li {
       flex-wrap: wrap;
 }
 .projects-block__img {
-  border: 2px solid #303263;
   -o-object-fit: cover;
      object-fit: cover;
   width: 25%;
 }
 .projects-block__img:hover {
   scale: 110%;
+  border: 2px solid #303263;
 }
 .projects-block__img:nth-child(1), .projects-block__img:nth-child(2) {
   width: 50%;
@@ -1469,6 +1479,8 @@ li {
           flex-direction: column;
 }
 .adaptate-info__descr {
+  overflow: hidden;
+  max-height: 660px;
   color: #000000;
   margin-top: 30px;
   font-size: 24px;

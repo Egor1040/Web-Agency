@@ -18,6 +18,7 @@
         @include flex($jc: center, $ai: flex-start, $fd: column)
     }
     &__title {
+        max-height: 350px;
         color: $TitleColorStudios;
         font-size: 48px;
         font-weight: bold;
@@ -64,7 +65,6 @@
     position: relative;
     background: white;
     display: flex;
-    justify-content: center;
     @media (max-width: 1245px) {
         padding-bottom: calc(30px + (240 - 30) * ((100vw - 320px) / (1245 - 320)));
     }
@@ -81,7 +81,7 @@
         width: 400px;
         height: 380px;
         @media (max-width: 1245px) {
-            height: calc(350px + (380 - 350) * ((100vw - 320px) / (1245 - 320)));;
+            height: calc(360px + (380 - 360) * ((100vw - 320px) / (1245 - 320)));;
         }
         &:hover {
             background: #f6ae48;

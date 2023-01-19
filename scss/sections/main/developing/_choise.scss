@@ -1,4 +1,6 @@
 .choise {
+    cursor: pointer;
+    column-gap: 30px;
     position: relative;
     display: flex;
     padding-top: 210px;
@@ -12,10 +14,10 @@
         flex-direction: column;
     }
     &-item {
-        @include flex($jc: center, $ai: center, $fd: column);
-        margin-right: 20px;
-        width: 363px;
-        height: 315px;
+        padding-top: 55px;
+        padding-bottom: 55px;
+        padding-left: 50px;
+        padding-right: 50px;
         &:nth-child(1) {
             background-image: linear-gradient(to right top, #0e0f1293),
             url(../img/choise1.png);
@@ -30,7 +32,6 @@
         &:nth-child(3) {
             background-image: linear-gradient(to right top, #0e0f1293),
             url(../img/choise3.png);
-            margin-right: 0;
             @media(max-width: 1027px) {
                 margin-top: 20px;
             }
@@ -74,7 +75,6 @@
 
 .button-choise {
     padding-top: 45px;
-    width: 260px;
     font-size: 24px;
     @include flex($jc: space-between, $ai: center, $fd: row);
     @media(max-width: 1170px) {
@@ -84,25 +84,29 @@
         width: 250px;
         padding-top: 0;
     }
+    &__img {
+        max-width: 35px;
+        max-height: 35px;
+    }
     &__price {
         &_blue {
             width: 200px;
             height: 56px;
-            border: 2px solid #00b9e7;
+            border: 2px solid #ffffff;
             color: $ColorPriceChoise;
             @include flex;
         }
         &_yellow {
             width: 200px;
             height: 56px;
-            border: 2px solid #ffcb00;
+            border: 2px solid #ffffff;
             color: $ColorPriceChoise;
             @include flex;
         }
         &_green {
             width: 200px;
             height: 56px;
-            border: 2px solid #66bf0d;
+            border: 2px solid #ffffff;
             color: $ColorPriceChoise;
             @include flex;
         }
@@ -111,4 +115,16 @@
             height: 50px;
         }
     }
+}
+
+.choise-item:hover .button-choise__price_blue {
+        border: 3px solid #00b9e7;
+}
+
+.choise-item:hover .button-choise__price_yellow {
+    border: 3px solid #ffcb00;
+}
+
+.choise-item:hover .button-choise__price_green {
+    border: 3px solid #66bf0d;
 }

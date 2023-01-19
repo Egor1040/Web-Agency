@@ -44,9 +44,9 @@
     display: flex;
     flex-wrap: wrap;
     &__img {
-        border: 2px solid $BorderColorInProjects;
         &:hover {
             scale: 110%;
+            border: 2px solid $BorderColorInProjects;
         }
         object-fit: cover;
         width: calc(100% / 4);
