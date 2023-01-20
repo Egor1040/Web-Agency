@@ -6,12 +6,8 @@
     padding-top: 210px;
     padding-left: 20px;
     padding-right: 50px;
-    @media(max-width: 1170px) {
-        padding-top: 170px;
+    @media (max-width: 1170px) {
         flex-wrap: wrap;
-    }
-    @media(max-width: 740px) {
-        flex-direction: column;
     }
     &-item {
         padding-top: 55px;
@@ -21,9 +17,9 @@
         &:nth-child(1) {
             background-image: linear-gradient(to right top, #0e0f1293),
             url(../img/choise1.png);
-            @media(max-width: 770px) {
-                margin-bottom: 20px;
-             }
+            @media (max-width: 852px) {
+                margin-bottom: 30px;
+            }
         }
         &:nth-child(2) {
             background-image: linear-gradient(to right top, #0e0f1293),
@@ -32,21 +28,9 @@
         &:nth-child(3) {
             background-image: linear-gradient(to right top, #0e0f1293),
             url(../img/choise3.png);
-            @media(max-width: 1027px) {
-                margin-top: 20px;
+            @media (max-width: 1170px) {
+                margin-top: 30px;
             }
-        }
-        @media(max-width: 1170px) {
-            width: 300px;
-            height: 215px;
-        }
-        @media(max-width: 770px) {
-            flex-direction: column;
-        }
-        @media(max-width: 360px) {
-            padding-right: 0;
-            width: 270px;
-            height: 215px; 
         }
         &__lending {
             height: 105px;
@@ -60,15 +44,6 @@
             & span {
                 border-bottom: 2px solid $ColorBorderBottomTitleChoise;
             }
-            @media(max-width: 1170px) {
-                letter-spacing: 0;
-                white-space: nowrap;
-                font-weight: bold;
-                font-size: 25px;
-                line-height: 29.2px;
-                display: flex;
-                justify-content: space-evenly;
-            }
         }
     }
 }
@@ -77,12 +52,8 @@
     padding-top: 45px;
     font-size: 24px;
     @include flex($jc: space-between, $ai: center, $fd: row);
-    @media(max-width: 1170px) {
-        padding-top: 0;
-    }
     @media(max-width: 360px) {
         width: 250px;
-        padding-top: 0;
     }
     &__img {
         max-width: 35px;
