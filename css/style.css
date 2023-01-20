@@ -904,32 +904,60 @@ li {
         flex-wrap: wrap;
   }
 }
+@media (max-width: 500px) {
+  .choise {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
 .choise-item {
   padding-top: 55px;
   padding-bottom: 55px;
   padding-left: 50px;
   padding-right: 50px;
 }
+@media (max-width: 500px) {
+  .choise-item {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 .choise-item:nth-child(1) {
   background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(14, 15, 18, 0.5764705882))), url(../img/choise1.png);
   background-image: linear-gradient(to right top, rgba(14, 15, 18, 0.5764705882)), url(../img/choise1.png);
+  background-size: cover;
 }
 @media (max-width: 852px) {
   .choise-item:nth-child(1) {
     margin-bottom: 30px;
+    width: 100%;
   }
 }
 .choise-item:nth-child(2) {
   background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(14, 15, 18, 0.5764705882))), url(../img/choise2.png);
   background-image: linear-gradient(to right top, rgba(14, 15, 18, 0.5764705882)), url(../img/choise2.png);
+  background-size: cover;
+}
+@media (max-width: 852px) {
+  .choise-item:nth-child(2) {
+    width: 100%;
+  }
 }
 .choise-item:nth-child(3) {
   background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(14, 15, 18, 0.5764705882))), url(../img/choise3.png);
   background-image: linear-gradient(to right top, rgba(14, 15, 18, 0.5764705882)), url(../img/choise3.png);
+  background-size: cover;
 }
 @media (max-width: 1170px) {
   .choise-item:nth-child(3) {
     margin-top: 30px;
+  }
+}
+@media (max-width: 852px) {
+  .choise-item:nth-child(3) {
+    width: 100%;
   }
 }
 .choise-item__lending {
@@ -948,6 +976,11 @@ li {
   color: #ffffff;
   font-size: 50px;
   line-height: 48.2px;
+}
+@media (max-width: 500px) {
+  .choise-item__lending {
+    font-size: 40px;
+  }
 }
 .choise-item__lending span {
   border-bottom: 2px solid #ffffff;
