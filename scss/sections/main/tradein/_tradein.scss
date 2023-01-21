@@ -70,6 +70,10 @@
         @media (max-width: 1245px) {
             font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1245 - 320)));
         }
+        @media(max-width: 400px) {
+            line-height: 1;
+            white-space: normal;
+        }
     }
 }
 
