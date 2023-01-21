@@ -113,6 +113,7 @@ li {
           flex-direction: row;
   max-height: 100px;
   padding: 30px 0;
+  padding-right: 20px;
   -webkit-column-gap: 40px;
      -moz-column-gap: 40px;
           column-gap: 40px;
@@ -1206,12 +1207,15 @@ li {
   max-height: 510px;
   color: #000000;
   margin-top: 30px;
+  margin-right: 20px;
   font-size: 24px;
   line-height: 48px;
 }
 @media (max-width: 1245px) {
   .seo-text__text {
     margin-top: 20px;
+    line-height: calc(16px + 32 * (100vw - 320px) / 925);
+    font-size: calc(16px + 8 * (100vw - 320px) / 925);
   }
 }
 @media (max-width: 770px) {
@@ -1219,17 +1223,6 @@ li {
     line-height: 25px;
     font-size: 20px;
     margin-top: 20px;
-  }
-}
-@media (max-width: 600px) {
-  .seo-text__text {
-    line-height: 20px;
-    font-size: 16px;
-  }
-}
-@media (max-width: 370px) {
-  .seo-text__text {
-    line-height: 16px;
   }
 }
 
