@@ -832,7 +832,7 @@ li {
 @media (max-width: 1245px) {
   .frame {
     width: calc(340px + 326 * (100vw - 320px) / 925);
-    height: calc(220px + 307 * (100vw - 320px) / 925);
+    height: calc(250px + 277 * (100vw - 320px) / 925);
     left: calc(-44px + -156 * (100vw - 320px) / 925);
     top: calc(-20px + -26 * (100vw - 320px) / 925);
   }
@@ -1329,7 +1329,7 @@ li {
   line-height: 1;
   font-size: 96px;
   font-weight: bold;
-  color: rgba(193, 193, 193, 0.4980392157);
+  color: rgba(207, 207, 207, 0.4901960784);
   position: absolute;
   z-index: -1;
   letter-spacing: 15px;

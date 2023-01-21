@@ -20,7 +20,7 @@
     background: #f6ae48;
     @media (max-width: 1245px) {
         width: calc(340px + (666 - 340) * ((100vw - 320px) / (1245 - 320)));
-        height: calc(220px + (527 - 220) * ((100vw - 320px) / (1245 - 320)));
+        height: calc(250px + (527 - 250) * ((100vw - 320px) / (1245 - 320)));
         left: calc(-44px + (-200 - -44) * ((100vw - 320px) / (1245 - 320)));
         top: calc(-20px + (-46 - -20) * ((100vw - 320px) / (1245 - 320)));
     }
