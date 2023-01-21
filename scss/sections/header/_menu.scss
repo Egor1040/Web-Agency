@@ -24,28 +24,43 @@
         }
     }
     &-block {
-        overflow: hidden;
         @include flex($jc:flex-end, $ai:center, $fd:row);
         max-height: 100px;
         padding: 30px 0;
+        column-gap: 40px;
+        @include for-laptop {
+            font-size: 20px;
+        }
+        @include for-tablet {
+            font-size: 16px;
+        }
+        @media (max-width: 935px) {
+            @include flex($jc:flex-start, $ai:center, $fd:row);
+        }
+        @media (max-width: 930px) {
+            column-gap: 0px;
+        }
     }
     &__item {
         white-space: nowrap;
         font-size: 1.250rem;
-        margin-right: 40px;
         &:first-child {
             margin-left: 20px;
             color: #f6ae48;
             &:hover {
                 color: #303263;
             }
-        }
-        &:last-child {
-            margin-right: 0px;
+            @media (max-width: 930px) {
+                margin-right: 20px;
+                margin-left: 20px;
+            }
         }
         &_passive {
             &:hover {
                 color: #303263;
+            }
+            @media (max-width: $bp-menuOff) {
+                display: none;
             }
         }
         &-button {
@@ -56,6 +71,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            @media (min-width: 930px) {
+                display: none;
+            }
+            & img {
+                @media (max-width: 650px) {
+                    width: 21px;
+                }
+            }
             & span,
             &::before,
             &::after {
@@ -85,11 +108,13 @@
 }
 
 .button-click {
+    z-index: 10;
+    width: 300px;
+    font-size: 35px;
     position: absolute;
-    top: -25px;
-    left: 50px;
-    width: 173px;
-    height: 100px;
+    top: 50px;
+    left: -171px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     background: white;

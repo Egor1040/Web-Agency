@@ -65,11 +65,13 @@
     position: relative;
     background: white;
     display: flex;
+    justify-content: space-between;
     @media (max-width: 1245px) {
         padding-bottom: calc(30px + (240 - 30) * ((100vw - 320px) / (1245 - 320)));
     }
         @media (max-width: $st-laptop) {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         height: auto;
     }
