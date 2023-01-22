@@ -48,6 +48,9 @@ li {
         max-width: 1245px;
         margin: 0 auto;
     }
+    &__projects {
+        overflow: hidden;
+    }
 }
 
 .title {

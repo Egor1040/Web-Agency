@@ -64,13 +64,8 @@
         font-size: 24px;
         line-height: 48px;
         @media(max-width: 1245px) {
-            margin-top: 20px;
-            line-height: calc(16px + (48 - 16) * ((100vw - 320px) / (1245 - 320)));
             font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1245 - 320)));
-        }
-        @media(max-width: 770px) {
-            line-height: 25px;
-            font-size: 20px;
+            line-height: calc(20px + (48 - 20) * ((100vw - 320px) / (1245 - 320)));
             margin-top: 20px;
         }
     }

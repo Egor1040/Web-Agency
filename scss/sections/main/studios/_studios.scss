@@ -38,6 +38,7 @@
         }
         @media (max-width: $st-tablet) {
             font-size: 16px;
+            line-height: 20px;
         }
     }
     &__bg-text {
@@ -56,6 +57,7 @@
         }
         @media (max-width: $bp-tablet2) {
             font-size: 6rem;
+            left: 50%;
         }
     }
 }

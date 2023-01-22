@@ -10,6 +10,7 @@
             padding: 45px 0;
             max-height: 190px;
             font-size: 48px;
+            font-weight: bold;
             line-height: 72px;
             color: $TitleColorTradeIn;
             @media (max-width: 1245px) {
@@ -59,6 +60,10 @@
     &__img {
         width: 70px;
         height: 50px;
+        @media (max-width: 1245px) {
+            width: calc(44px + (70 - 44) * ((100vw - 320px) / (1245 - 320)));
+            height: calc(33px + (50 - 33) * ((100vw - 320px) / (1245 - 320)));
+        }
     }
     &__title {
         overflow: hidden;
@@ -87,11 +92,14 @@
     border-radius: 10px;
     background: $RatingButtonBackground;
     @media (max-width: 1245px) {
-        width: calc(250px + (330 - 250) * ((100vw - 320px) / (1245 - 320)));
+        width: calc(265px + (330 - 265) * ((100vw - 320px) / (1245 - 320)));
     }
     &__descr {
         color: #ffffff;
         font-size: 24px;
+        @media(max-width: 1245px) {
+            font-size: calc(20px + (24 - 20) * ((100vw - 320px) / (1245 - 320)));
+        }
     }
     &:hover {
         background: #fb9301;

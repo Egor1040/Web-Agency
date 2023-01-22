@@ -32,7 +32,7 @@
         letter-spacing: 0;
         @media (max-width: 1245px) {
             font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1245 - 320)));
-            line-height: calc(16px + (48 - 16) * ((100vw - 320px) / (1245 - 320)));
+            line-height: calc(20px + (48 - 20) * ((100vw - 320px) / (1245 - 320)));
             margin-top: 20px;
         }
     }

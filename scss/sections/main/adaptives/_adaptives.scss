@@ -28,7 +28,7 @@
         letter-spacing: 0;
         @media (max-width: 1245px) {
             font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1245 - 320)));
-            line-height: calc(16px + (48 - 16) * ((100vw - 320px) / (1245 - 320)));
+            line-height: calc(20px + (48 - 20) * ((100vw - 320px) / (1245 - 320)));
             margin-top: 20px;
         }
     }
@@ -37,7 +37,7 @@
 .adaptate-heading {
     &__title {
         color: $TitleandTextColorHeading;
-        @include flex($jc: flex-start, $ai: center, $fd: row);
+        @include flex($jc: center, $ai: center, $fd: row);
         font-size: 36px;
         font-weight: bold;
         position: relative;
@@ -52,7 +52,6 @@
         font-weight: bold;
         letter-spacing: 8px;
         position: absolute;
-        left: -50px;
         z-index: -1;
         @media (max-width: 1245px) {
             font-size: calc(35px + (78 - 35) * ((100vw - 320px) / (1245 - 320)));
@@ -62,12 +61,12 @@
 
 .adaptate-img {
     position: absolute;
-    left: 733px;
+    left: 655px;
     z-index: -1;
     display: flex;
     align-items: flex-end;
     @media (max-width: 1245px) {
-        left: calc(0px + (733 - 0) * ((100vw - 320px) / (1245 - 320)));
+        left: calc(0px + (655 - 0) * ((100vw - 320px) / (1245 - 320)));
     }
     @media(max-width: 1020px) {
         opacity: .3;
