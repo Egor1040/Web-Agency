@@ -25,6 +25,24 @@
     box-sizing: border-box;
 }
 
+body {
+    height: 400vh;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: #dddddd;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f6ae48;
+    border-radius: 20px;
+}
+
 a, img {
     display: block;
     text-decoration: none;
