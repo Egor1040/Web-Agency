@@ -2,8 +2,8 @@
     background: $BackgroundStudiosBlock;
 }
 .specializations {
-    padding-top: 185px;
-    padding-bottom: 185px;
+    padding-top: 140px;
+    padding-bottom: 140px;
     padding-left: 20px;
     padding-right: 20px;
     display: flex;
@@ -11,7 +11,7 @@
     justify-content: space-between;
     position: relative;
     @media (max-width: 1245px) {
-        padding-top: calc(30px + (185 - 30) * ((100vw - 320px) / (1245 - 320)));
+        padding-top: calc(30px + (140 - 30) * ((100vw - 320px) / (1245 - 320)));
         padding-bottom: calc(30px + (185 - 30) * ((100vw - 320px) / (1245 - 320)));
     }
     @media (max-width: 1000px) {
@@ -63,7 +63,7 @@
 }
 
 .special {
-    padding-bottom: 240px;
+    padding-bottom: 140px;
     position: relative;
     background: white;
     display: flex;
@@ -86,6 +86,9 @@
         height: 380px;
         @media (max-width: 1245px) {
             height: calc(360px + (380 - 360) * ((100vw - 320px) / (1245 - 320)));;
+        }
+        @media (max-width: 819px) {
+            width: calc(320px + (800 - 320) * ((100vw - 320px) / (1245 - 320)));;
         }
         &:hover {
             background: #f6ae48;
@@ -124,6 +127,9 @@
             height: 380px;
             @media (max-width: 1245px) {
                 height: calc(350px + (380 - 350) * ((100vw - 320px) / (1245 - 320)));;
+            }
+            @media (max-width: 819px) {
+                width: calc(320px + (800 - 320) * ((100vw - 320px) / (1245 - 320)));;
             }
             &:hover {
                 background: #f6ae48;

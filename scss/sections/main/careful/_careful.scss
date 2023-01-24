@@ -16,7 +16,7 @@
     }
     @media (max-width: 1200px) {
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-start;
         align-content: center;
     }
 }
@@ -75,7 +75,7 @@
         width: 560px;
         height: 460px;
         @media (max-width: 1245px) {
-            width: calc(320px + (560 - 320) * ((100vw - 320px) / (1245 - 320)));
+            width: calc(270px + (560 - 270) * ((100vw - 320px) / (1245 - 320)));
             height: calc(240px + (460 - 240) * ((100vw - 320px) / (1245 - 320)));
         }
     }

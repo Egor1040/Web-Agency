@@ -57,6 +57,10 @@ li {
     position: relative;
     max-width: 1245px;
     margin: 0 auto;
+    &__click {
+        max-width: 1245px;
+        overflow: hidden;  
+    }
     &__frame {
         max-width: 1245px;
         overflow: hidden;
