@@ -7,6 +7,9 @@
     padding-top: 210px;
     padding-left: 20px;
     padding-right: 20px;
+    @media(max-width: 1245px) {
+        padding-top: calc(125px + (210 - 125) * ((100vw - 320px) / (1245 - 320)));
+    }
     @media (max-width: 1170px) {
         flex-wrap: wrap;
         justify-content: center;
@@ -20,6 +23,9 @@
         padding-bottom: 55px;
         padding-left: 50px;
         padding-right: 50px;
+        @media (max-width: 852px) {
+            width: 80%;
+        }
         @media (max-width: 500px) {
             padding-top: 35px;
             padding-bottom: 35px;
@@ -32,16 +38,12 @@
             background-size: cover;
             @media (max-width: 852px) {
                 margin-bottom: 30px;
-                width: 100%;
             }
         }
         &:nth-child(2) {
             background-image: linear-gradient(to right top, #0e0f1293),
             url(../img/choise2.png);
             background-size: cover;
-            @media (max-width: 852px) {
-                width: 100%;
-            }
         }
         &:nth-child(3) {
             background-image: linear-gradient(to right top, #0e0f1293),
@@ -49,9 +51,6 @@
             background-size: cover;
             @media (max-width: 1170px) {
                 margin-top: 30px;
-            }
-            @media (max-width: 852px) {
-                width: 100%;
             }
         }
         &__lending {
@@ -62,10 +61,12 @@
             max-width: 262px;
             color: $ColorTitleChoise;
             font-size: 50px;
-            line-height: 48.2px;
-            @media (max-width: 500px) {
-                font-size: 40px;  
-            }
+            line-height: 48px;
+            @media(max-width: 1245px) {
+                font-size: calc(25px + (50 - 25) * ((100vw - 320px) / (1245 - 320)));
+                line-height: calc(25px + (48 - 25) * ((100vw - 320px) / (1245 - 320)));
+                height: calc(58px + (105 - 58) * ((100vw - 320px) / (1245 - 320)));
+            } 
             & span {
                 border-bottom: 2px solid $ColorBorderBottomTitleChoise;
             }
@@ -78,7 +79,7 @@
     font-size: 24px;
     @include flex($jc: space-between, $ai: center, $fd: row);
     @media(max-width: 360px) {
-        width: 250px;
+        max-width: 250px;
     }
     &__img {
         max-width: 35px;
@@ -107,8 +108,9 @@
             @include flex;
         }
         @media(max-width: 1170px) {
-            width: 200px;
-            height: 50px;
+            font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1245 - 320)));
+            width: calc(150px + (200 - 150) * ((100vw - 320px) / (1245 - 320)));
+            height: calc(40px + (50 - 40) * ((100vw - 320px) / (1245 - 320)));
         }
     }
 }

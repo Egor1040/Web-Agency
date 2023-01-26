@@ -12,6 +12,8 @@
             padding-bottom: calc(30px + (140 - 30) * ((100vw - 320px) / (1245 - 320)));
         }
         &__title {
+            max-width: 754px;
+            overflow: hidden;
             max-height: 140px;
             color: $ColorTitleCredo;
             font-size: 50px;
@@ -20,11 +22,9 @@
             padding-bottom: 60px;
             line-height: 48px;
             @media (max-width: $cr-tablet) {
-                font-size: 40px;
-                padding: 20px;
-            }
-            @media (max-width: $bp-tablet2) {
-                font-size: 32px;
+                font-size: calc(24px + (50 - 24) * ((100vw - 320px) / (1245 - 320)));
+                line-height: calc(30px + (48 - 30) * ((100vw - 320px) / (1245 - 320)));
+                padding-bottom: calc(30px + (60 - 30) * ((100vw - 320px) / (1245 - 320)));
             }
         }
         &__descr {

@@ -19,7 +19,7 @@
     height: 527px;
     background: #f6ae48;
     @media (max-width: 1245px) {
-        width: calc(340px + (666 - 340) * ((100vw - 320px) / (1245 - 320)));
+        width: calc(344px + (666 - 344) * ((100vw - 320px) / (1245 - 320)));
         height: calc(250px + (527 - 250) * ((100vw - 320px) / (1245 - 320)));
         left: calc(-44px + (-200 - -44) * ((100vw - 320px) / (1245 - 320)));
         top: calc(-20px + (-46 - -20) * ((100vw - 320px) / (1245 - 320)));
@@ -32,21 +32,25 @@
         letter-spacing: 5px;
         @media (max-width: 1245px) {
             font-size: calc(30px + (50 - 30) * ((100vw - 320px) / (1245 - 320)));
-        }
-        @media (max-width: 1245px) {
-            padding-left: calc(50px + (105 - 50) * ((100vw - 320px) / (1245 - 320)));
+            padding-left: calc(30px + (105 - 30) * ((100vw - 320px) / (1245 - 320)));
         }
     }
     &__img {
     &_first {
         position: absolute;
-        top: 10px;
-        left: -100px;
+        top: -25px;
+        left: 0px;
+        @media (max-width: 1245px) {
+            left: calc(-90px + (0 - -90) * ((100vw - 320px) / (1245 - 320)));
+        }
     }
     &_second {
         position: absolute;
         top: -35px;
         right: -70px;
+        @media (max-width: 1245px) {
+            width: calc(140px + (215 - 140) * ((100vw - 320px) / (1245 - 320)));
+        }
     }
     @keyframes rotate {
         0% {
