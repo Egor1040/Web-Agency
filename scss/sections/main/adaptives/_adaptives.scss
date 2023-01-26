@@ -77,6 +77,7 @@
             padding-bottom: calc(5px + (20 - 5) * ((100vw - 320px) / (1245 - 320)));
         }
         &_iphone {
+            animation-delay: 0.8s;
             width: 112px;
             height: 227px;
             margin-right: 55px;
@@ -87,6 +88,7 @@
             }
         }
         &_ipad {
+            animation-delay: 1.2s;
             width: 242px;
             height: 344px;
             margin-right: 23px;
@@ -97,6 +99,7 @@
             }
         }
         &_macbook {
+            animation-delay: 1.5s;
             width: 750px;
             height: 436px;
             @media (max-width: 1245px) {

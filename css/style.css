@@ -12,7 +12,7 @@
   letter-spacing: 2px;
   --animate-duration: 2s;
   --animate-delay: 2s;
-  --animation-timing-function: linear;
+  --animation-timing-function: ease;
 }
 
 * {
@@ -1615,6 +1615,8 @@ li {
   }
 }
 .adaptate-img__device_iphone {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
   width: 112px;
   height: 227px;
   margin-right: 55px;
@@ -1627,6 +1629,8 @@ li {
   }
 }
 .adaptate-img__device_ipad {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
   width: 242px;
   height: 344px;
   margin-right: 23px;
@@ -1639,6 +1643,8 @@ li {
   }
 }
 .adaptate-img__device_macbook {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
   width: 750px;
   height: 436px;
 }
