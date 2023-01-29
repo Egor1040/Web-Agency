@@ -88,7 +88,8 @@
         padding: 20px;
         width: 400px;
         height: 380px;
-        
+        display: grid;
+        grid-template-rows: 17% 10% 60% auto;
         @media (max-width: 1245px) {
             height: calc(360px + (380 - 360) * ((100vw - 320px) / (1245 - 320)));;
         }
@@ -106,7 +107,6 @@
             fill: #00b9e7;
             width: 35px;
             height: 45px;
-            margin-bottom: 10px;
             &_last {
                 font-weight: bold;
                 width: 45px;
@@ -118,7 +118,6 @@
             display: flex;
             justify-content: flex-start;
             font-size: 20px;
-            margin-bottom: 10px;
             line-height: 1;
         }
         &__text {
@@ -132,14 +131,6 @@
             }
         }
         &_community {
-            width: 400px;
-            height: 380px;
-            @media (max-width: 1245px) {
-                height: calc(350px + (380 - 350) * ((100vw - 320px) / (1245 - 320)));;
-            }
-            @media (max-width: 819px) {
-                width: calc(320px + (800 - 320) * ((100vw - 320px) / (1245 - 320)));;
-            }
             &:hover {
                 background: #f6ae48;
                 color: white;
@@ -151,10 +142,6 @@
 
 .button-block {
     display: none;
-    margin-top: 15px;
-    @media (max-width: 1245px) {
-        margin-top: calc(5px + (15 - 5) * ((100vw - 320px) / (1245 - 320)));;
-    }
     &__price {
         @include flex;
         width: 132px;
