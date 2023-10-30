@@ -12,14 +12,17 @@
     }
     @keyframes fixedMenu {
         0% {
-            height: 0;
+            opacity: 0.2;
+            height: 50px;
         }
         
         50% {
+            opacity: 0.5;
             height: 120px;
         }
 
         100% {
+            opacity: 1;
             height: 99px;
         }
     }
