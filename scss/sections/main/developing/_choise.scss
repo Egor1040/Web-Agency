@@ -76,7 +76,7 @@
 
 .button-choise {
     padding-top: 45px;
-    font-size: 24px;
+    font-size: 17px;
     @include flex($jc: space-between, $ai: center, $fd: row);
     @media(max-width: 360px) {
         max-width: 250px;
@@ -108,7 +108,7 @@
             @include flex;
         }
         @media(max-width: 1170px) {
-            font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1245 - 320)));
+            font-size: calc(16px + (17 - 16) * ((100vw - 320px) / (1245 - 320)));
             width: calc(150px + (200 - 150) * ((100vw - 320px) / (1245 - 320)));
             height: calc(40px + (50 - 40) * ((100vw - 320px) / (1245 - 320)));
         }
